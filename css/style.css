@@ -16,14 +16,14 @@ body {
 }
 
 a {
-  color: #f82249;
+  color: #63b132;
   transition: 0.5s;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #f8234a;
+  color: #509425;
   outline: none;
   text-decoration: none;
 }
@@ -72,7 +72,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #f82249;
+  background: #63b132;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -89,13 +89,13 @@ h6 {
 }
 
 .back-to-top:focus {
-  background: #e0072f;
+  background: #509425;
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #e0072f;
+  background: #509425;
   color: #fff;
 }
 
@@ -114,7 +114,7 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #f82249;
+  background: #63b132;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -175,7 +175,7 @@ h6 {
 }
 
 #header #logo h1 span {
-  color: #f82249;
+  color: #63b132;
 }
 
 #header #logo h1 a,
@@ -288,7 +288,7 @@ h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #f82249;
+  background-color: #63b132;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -302,10 +302,10 @@ h6 {
 
 .nav-menu li.buy-tickets a {
   color: #fff;
-  background: #f82249;
+  background: #63b132;
   padding: 7px 22px;
   border-radius: 50px;
-  border: 2px solid #f82249;
+  border: 2px solid #63b132;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   margin-left: 8px;
@@ -321,37 +321,6 @@ h6 {
 .nav-menu li.buy-tickets:hover a:before,
 .nav-menu li.buy-tickets.menu-active a:before {
   visibility: hidden;
-}
-
-.nav-menu ul {
-  margin: 4px 0 0 0;
-  padding: 10px;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: #fff;
-  border-radius: 3px;
-}
-
-.nav-menu ul li {
-  transition: 0.3s;
-}
-
-.nav-menu ul li a {
-  padding: 10px;
-  color: #060c22;
-  transition: 0.3s;
-  display: block;
-  font-size: 13px;
-  text-transform: none;
-  border-radius: 3px;
-}
-
-.nav-menu ul li:hover > a {
-  background: #f82249;
-  color: #fff;
-}
-
-.nav-menu ul ul {
-  margin: 0;
 }
 
 /* Mobile Nav Toggle */
@@ -413,28 +382,15 @@ h6 {
 }
 
 #mobile-nav ul li a:hover {
-  color: #f82249;
+  color: #63b132;
 }
 
 #mobile-nav ul li li {
   padding-left: 30px;
 }
 
-#mobile-nav ul .menu-has-children i {
-  position: absolute;
-  right: 0;
-  z-index: 99;
-  padding: 15px;
-  cursor: pointer;
-  color: #fff;
-}
-
-#mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #f82249;
-}
-
 #mobile-nav ul .menu-item-active {
-  color: #f82249;
+  color: #63b132;
 }
 
 #mobile-body-overly {
@@ -517,7 +473,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro h1 span {
-  color: #f82249;
+  color: #63b132;
 }
 
 #intro p {
@@ -540,11 +496,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #f82249;
+  border: 2px solid #63b132;
 }
 
 #intro .about-btn:hover {
-  background: #f82249;
+  background: #63b132;
   color: #fff;
 }
 
@@ -623,7 +579,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #f82249;
+  background-color: #63b132;
   color: #fff;
 }
 
@@ -735,7 +691,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #speakers .speaker .details a:hover {
-  color: #f82249;
+  color: #63b132;
 }
 
 #speakers .speaker:hover .details {
@@ -770,7 +726,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #speakers-details .details .social a:hover {
-  background: #f82249;
+  background: #63b132;
   color: #fff;
 }
 
@@ -865,7 +821,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #faq #faq-list a.collapse {
-  color: #f82249;
+  color: #63b132;
 }
 
 #faq #faq-list a.collapsed {
@@ -890,7 +846,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .contact-info i {
   display: inline-block;
-  color: #f82249;
+  color: #63b132;
 }
 
 #contact .contact-info a {
@@ -898,7 +854,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-info a:hover {
-  color: #f82249;
+  color: #63b132;
 }
 
 /*--------------------------------------------------------------
