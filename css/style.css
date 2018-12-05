@@ -583,13 +583,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#schedule .sub-heading {
-  text-align: center;
-  font-size: 18px;
-  font-style: italic;
-  margin: 0 auto 30px auto;
-}
-
 #schedule .tab-pane {
   transition: ease-in-out .2s;
 }
@@ -631,13 +624,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
-}
-
-#schedule .schedule-item h4 span {
-  font-style: italic;
-  color: #19328e;
-  font-weight: normal;
-  font-size: 16px;
 }
 
 #schedule .schedule-item p {
@@ -883,12 +869,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Responsive Media Queries
 --------------------------------------------------------------*/
 
-@media (min-width: 991px) {
-  #schedule .sub-heading {
-    width: 75%;
-  }
-}
-
 @media (min-width: 1024px) {
   #intro {
     background-attachment: fixed;
@@ -959,6 +939,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 767px) {
   #schedule .nav-tabs a {
     padding: 8px 50px;
+  }
+  #schedule .schedule-item h4 {
+    font-size: 16px;
   }
 }
 
