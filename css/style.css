@@ -726,6 +726,25 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 10px;
 }
 
+a.cfp-link {
+  color: #fff;
+  background-color: #63b132;
+  padding: 7px 22px;
+  border-radius: 50px;
+  border: 2px solid #63b132;
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 30px;
+  line-height: 1;
+  font-size: 13px;
+}
+
+a.cfp-link:hover {
+  color: #63b132;
+  background-color: none;
+}
+
 /*--------------------------------------------------------------
 # Sponsors Section
 --------------------------------------------------------------*/
@@ -780,11 +799,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   list-style: none;
 }
 
-#faq #faq-list li {
+#faq #faq-list>li {
   border-bottom: 1px solid #ddd;
 }
 
-#faq #faq-list a {
+#faq #faq-list a.faq-toggle  {
   padding: 18px 0;
   display: block;
   position: relative;
@@ -816,6 +835,52 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
+}
+
+/*--------------------------------------------------------------
+# Subscribe Section
+--------------------------------------------------------------*/
+
+#subscribe {
+  padding: 60px;
+  background: linear-gradient(rgba(6, 12, 34, 0.7),rgba(6, 12, 34, 0.7)), url(../img/subscribe-bg.jpg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+
+#subscribe h2,
+#subscribe h3,
+#subscribe p {
+  color: #fff;
+}
+
+#subscribe input {
+  background: #fff;
+  color: #060c22;
+  border: 0;
+  outline: none;
+  margin: 0;
+  padding: 9px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+#subscribe button {
+  border: 0;
+  padding: 9px 25px;
+  cursor: pointer;
+  background: #63b132;
+  color: #fff;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+#subscribe button:hover {
+  background: #509425;
 }
 
 /*--------------------------------------------------------------
