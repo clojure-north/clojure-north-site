@@ -942,6 +942,10 @@ a.cfp-link:hover {
   #about {
     background-attachment: fixed;
   }
+
+  #subscribe {
+    background-attachment: fixed;
+  }
 }
 
 @media (max-width: 1199px) {
