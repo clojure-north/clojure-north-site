@@ -763,7 +763,7 @@ a.cfp-link:hover {
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex !important;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
