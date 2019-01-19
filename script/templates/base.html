@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Clojure/north 2019 | Expeditious Code via Inference by Mike Fikes</title>
+  <title>Clojure/north 2019 | {{ pageTitle }}</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Clojure conference in Toronto, Canada" name="description">
 
@@ -27,7 +27,7 @@
 
   <!-- Meta Tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Clojure/north 2019 | Mike Fikes" />
+  <meta property="og:title" content="Clojure/north 2019 {{ ogTitle }}" />
   <meta property="og:description" content="Clojure conference in Toronto, Canada" />
   <meta property="og:image" content="https://clojurenorth.com/img/logo-2x.png" />
   <meta property="og:url" content="http://clojurenorth.com/" />
@@ -72,42 +72,7 @@
     </div>
   </header><!-- #header -->
 
-  
-<main id="main" class="main-page">
-
-  <!--==========================
-    Speaker Details Section
-  ============================-->
-  <section id="speakers-details" class="wow fadeIn">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-6">
-          
-          <img src="img/speakers/mike-fikes.jpg" alt="Mike Fikes" class="img-fluid">
-          
-        </div>
-
-        <div class="col-md-6">
-          <div class="details">
-            <h2>Mike Fikes</h2>
-            
-            <h3>Expeditious Code via Inference</h3>
-            <p>This talk features coverage of recent ClojureScript compiler enhancements surrounding improved type inference and how this is leveraged to generate optimal code.</p>
-<hr>
-<h3>About Mike</h3>
-<p>In the open source community Mike is best known as a ClojureScript compiler maintainer and Planck REPL author. During his day job, he is a senior engineer at <a href="https://ledgrinc.com/">ledgrinc.com</a> and soon to be launched Vouchinc.net building blockchain and identity products.</p>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </section>
-
-</main>
-
+  {% block content %}{% endblock %}
 
   <!--==========================
     Footer
