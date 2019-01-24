@@ -1,4 +1,4 @@
-{:name  "Mihael Konjevic"
+{:name  "Mihael Konjević"
  :title "How is Keechma Different"
  :image "mihael.jpg"
  :social [{:link "https://github.com/retro" :icon "fa-github"}
