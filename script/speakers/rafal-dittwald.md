@@ -9,6 +9,12 @@ After overcoming a fear of brackets, the next challenge for would-be Clojurians 
 
 ---
 
+### Rafal's Lightning Talk: "Composing Applications"
+
+In this lightning talk, Rafal will give an explanation of how they achieved something similar to "Wordpress/Drupal plugins" and inversion of control in Clojure for Braid, an open-source clojure chat app.
+
+---
+
 ### About Rafal
 
 Rafal is a web developer, programming teacher and entrepreneur from Toronto. He used to work with PHP, Ruby and Javascript, but he's spent the last 7 (blissful) years working almost exclusively in Clojure and ClojureScript.
