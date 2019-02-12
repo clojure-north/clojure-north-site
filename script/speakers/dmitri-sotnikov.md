@@ -1,6 +1,6 @@
 {:name  "Dmitri Sotnikov"
  :title "Aviary: Clinical Collaboration Platform"
- :image "placeholder.jpg"
+ :image "dmitri-sotnikov.jpg"
  :social [{:link "https://github.com/yogthos" :icon "fa-github"}
  		  {:link "https://twitter.com/yogthos" :icon "fa-twitter"}
  		  {:link "http://yogthos.net/" :icon "fa-link"}]}
