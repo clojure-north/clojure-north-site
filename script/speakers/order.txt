@@ -8,3 +8,5 @@ james-cash
 mihael-konjevic
 jonathan-brown
 trevor-hartman
+balint-erdos
+katsuyasu-murata
