@@ -11,3 +11,5 @@ trevor-hartman
 balint-erdos
 katsuyasu-murata
 martin-klepsch
+dmitri-sotnikov
+carmen-la
