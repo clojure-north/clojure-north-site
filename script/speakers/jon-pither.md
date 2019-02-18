@@ -8,7 +8,7 @@ What do you do when data occasionally arrives out of order in a global topology,
 
 What if we've so much data, that we want to start compacting it? What if some of that data is personal data and we need to get rid of it whilst preserving an immutable record?
 
-Jon will unveil a new bi-temporal databased called Crux that addresses these concerns. During this talk Jon will explain the motivation for building Crux and will highlight some of its upcoming features, including - but not limited to - bitemporality.
+Jon will unveil a new bi-temporal database called Crux that addresses these concerns. During this talk Jon will explain the motivation for building Crux and will highlight some of its upcoming features, including - but not limited to - bitemporality.
 
 ---
 
