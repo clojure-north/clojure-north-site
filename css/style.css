@@ -613,7 +613,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item .speaker img {
-  height: 100%;
+  width: 100%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   margin-left: 50%;
@@ -624,6 +624,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
+}
+
+#schedule .schedule-item h4 span {
+    font-style: italic;
+    color: #19328e;
+    font-weight: normal;
+    font-size: 16px;
 }
 
 #schedule .schedule-item p {
