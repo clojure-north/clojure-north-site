@@ -2,7 +2,7 @@
  :title "Keynote: The Crux of Bitemporality"
  :image "jon-pither.jpg"}
 
-So you love immutability and want to time-travel your data. But then what happens when the data grows in size and you're integrating it from various upstream sources? What value of time do you want time-travel against?
+So you love immutability and want to time-travel your data. But then what happens when the data grows in size and you're integrating it from various upstream sources? What value of time do you want to time-travel against?
 
 What do you do when data occasionally arrives out of order in a global topology, or if you want to make corrections against the past?
 
