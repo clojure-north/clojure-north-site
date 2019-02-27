@@ -2,7 +2,7 @@
  :title "Creating and evolving contracts with Clojure.spec"
  :image "kapil-reddy.jpg"}
 
-In this talk Kapil will talk about how he has built a production ready high scale pub sub websockets system with Clojure. You will learn how Clojure can enable building really complex systems with simple code.
+In this talk, Kapil will discuss how you can create contracts and system boundaries using Clojure.spec. He will make a case how creating contracts using Clojure.spec not only makes things easier but also faster. You will see some nice advantages you can get when you start using Clojure.spec.
 
 ---
 
