@@ -609,7 +609,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   border-radius: 50%;
   float: left;
-  margin: 0 10px 10px 0;
+  margin: 0 10px 0 0;
 }
 
 #schedule .schedule-item .speaker img {
@@ -620,17 +620,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all ease-in-out 0.3s;
 }
 
+#schedule .schedule-item .details {
+  margin-left: 70px;
+}
+
 #schedule .schedule-item h4 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-#schedule .schedule-item h4 span {
+#schedule .schedule-item a {
     font-style: italic;
-    color: #19328e;
-    font-weight: normal;
-    font-size: 16px;
 }
 
 #schedule .schedule-item p {
@@ -1033,6 +1034,9 @@ a.cfp-link:hover {
   }
   #schedule .schedule-item h4 {
     font-size: 16px;
+  }
+  #schedule .schedule-item .details {
+    margin-left: 0;
   }
 }
 
