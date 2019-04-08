@@ -5,7 +5,7 @@
           {:link "https://github.com/cognitory" :icon "fa-github"}
           {:link "https://github.com/braidchat" :icon "fa-github"}]}
 
-After overcoming a fear of brackets, the next challenge for would-be Clojurians is less superficial: to stop writing Java (or Javascript, or Haskell...) with Clojure's syntax, and actually start "thinking in Clojure". It is said that Clojure is a "functional" programming language; there's also talk of "data oriented" programming. What are these things? Are they any good? Why are they good? In 'Solving Problems the Clojure Way', Rafal attempts to distill the particular blend of functional and data-oriented programming that makes up "idiomatic Clojure", clarify what it looks like in practise (with real-world examples), and reflect on how Clojure's conventions came to be and how they continue to evolve.
+After overcoming a fear of brackets, the next challenge for would-be Clojurians is less superficial: to stop writing Java (or Javascript, or Haskell...) with Clojure's syntax, and actually start "thinking" in Clojure. It is said that Clojure is a "functional" programming language; there's also talk of "data-driven" programming. What are these things? Are they any good? Why are they good? In this talk, Rafal attempts to distill the particular blend of functional and data-driven programming that makes up "idiomatic Clojure", clarify what it looks like in practise (with real-world examples), and reflect on how Clojure's conventions came to be and how they continue to evolve.
 
 ---
 
