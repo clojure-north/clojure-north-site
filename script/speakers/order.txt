@@ -6,7 +6,7 @@ ramsey-nasser
 tiago-luchini
 anatoly-polinsky
 james-cash
-mihael-konjevic
+tibor-kranjcec
 jonathan-brown
 trevor-hartman
 balint-erdos
@@ -19,7 +19,6 @@ henry-widd
 morri-feldman
 simon-belak
 nikita-prokopov
-kapil-reddy
 thomas-getgood
 eric-fode
 alex-hudek
