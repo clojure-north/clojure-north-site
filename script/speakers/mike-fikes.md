@@ -8,4 +8,4 @@ This talk features coverage of recent ClojureScript compiler enhancements surrou
 
 ### About Mike
 
-In the open source community Mike is best known as a ClojureScript compiler maintainer and Planck REPL author. During his day job, he is a senior engineer at [ledgrinc.com](https://ledgrinc.com/) and soon to be launched Vouchinc.net building blockchain and identity products.
+In the open source community Mike is best known as a ClojureScript compiler maintainer and Planck REPL author. During his day job, he is a senior engineer at [vouch.io](https://vouch.io/) building blockchain and identity products.
