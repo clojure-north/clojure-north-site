@@ -1,6 +1,7 @@
 {:name "Katsuyasu Murata"
  :title "Raising Services and People with Clojure"
- :image "katsuyasu-murata.jpg"}
+ :image "katsuyasu-murata.jpg"
+ :talk "https://www.youtube.com/watch?v=DL90i6RCwhs"}
 
 In this talk Balint and Katsuyasu discuss how they utilized Clojure's strengths to quickly release a new product, and at the same time raised team members from zero experience with Clojure to the point of individually developing production-ready code.
 

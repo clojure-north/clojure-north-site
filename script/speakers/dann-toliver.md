@@ -1,6 +1,7 @@
 {:name  "Dann Toliver"
  :title "Software, but not as we know it"
- :image "dann-toliver.jpg"}
+ :image "dann-toliver.jpg"
+ :talk "https://www.youtube.com/watch?v=iLeaXt9Bi58"}
 
 A gentle comparison between software and things that are not software. There's a thing beyond those hills and Dann wants to go to there.
 

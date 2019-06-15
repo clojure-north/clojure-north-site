@@ -1,6 +1,7 @@
 {:name "Alex Hudek"
  :title "Lessons Learned Creating a Successful Machine Learning Startup with Clojure"
- :image "alex-hudek.jpg"}
+ :image "alex-hudek.jpg"
+ :talk "https://www.youtube.com/watch?v=u-4FiFpkPlQ"}
 
 In this talk Alex will share why he chose to found a machine learning company with Clojure, what worked, what didn’t, and how they scaled their technology team from 3 people to over 40. Alex will explain where they use Clojure, and where they don’t, and why. How Clojure’s strengths and weaknesses change with your team size. Which assumptions he made about Clojure when founding the company that changed over time, and which turned out to be correct. 
 

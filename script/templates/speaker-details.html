@@ -30,7 +30,11 @@
               {% endfor %}
             </div>
             {% endif %}
+            {% if talk %}
+            <h3><a href="{{ talk }}" target="_blank">{{ title }} <i class="fa fa-play-circle"></i></a></h3>
+            {% else %}
             <h3>{{ title }}</h3>
+            {% endif %}
             {{ details | safe}}
           </div>
         </div>

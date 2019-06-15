@@ -1,7 +1,8 @@
 {:name  "Simon Belak"
  :title "Where to Start?"
  :image "simon-belak.jpg"
- :social [{:link "https://twitter.com/sbelak" :icon "fa-twitter"}]}
+ :social [{:link "https://twitter.com/sbelak" :icon "fa-twitter"}]
+ :talk "https://www.youtube.com/watch?v=sT8LIdfH4ak"}
 
 You’ve joined a Clojure company. Your dream job! Your first day, you clone the repo … and it’s 100kloc. Yikes! Where to start? How to start? What will your new colleagues think of your fumbling? Relax, take a deep breath, and remember your Hitchhiker’s Guide to the Galaxy: DON'T PANIC.
 

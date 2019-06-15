@@ -2,7 +2,8 @@
  :title "Crawling Inside the Tauntaun"
  :image "james-cash.jpg"
  :social [{:link "https://bloomventures.io" :icon "fa-link"}
-          {:link "https://occasionallycogent.com" :icon "fa-link"}]}
+          {:link "https://occasionallycogent.com" :icon "fa-link"}]
+ :talk "https://www.youtube.com/watch?v=uTxmI5y47l4"}
 
 In this talk James delvers into arcane Clojure debugging, where you need to fix someone else's code. We explore case studies of some particularly nasty situations, highlighting how Clojure's dynamic nature makes some very ugly debugging situations surprisingly tractable.
 

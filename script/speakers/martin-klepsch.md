@@ -1,7 +1,8 @@
 {:name "Martin Klepsch"
  :title "cljdoc — Better Documentation Tooling for the Clojure/Script Ecosystem"
  :image "martin-klepsch.jpg"
- :social [{:link "https://twitter.com/martinklepsch" :icon "fa-twitter"}]}
+ :social [{:link "https://twitter.com/martinklepsch" :icon "fa-twitter"}]
+ :talk "https://www.youtube.com/watch?v=8klBWIwYfsY"}
 
 Documentation is a key part of working with open source libraries. Good documentation makes programmers more productive. It's what makes simple things easy.
 

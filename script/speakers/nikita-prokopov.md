@@ -1,7 +1,8 @@
 {:name  "Nikita Prokopov"
  :title "Building My Own Clojure Tools"
  :image "nikita-prokopov.jpg"
- :social [{:link "http://tonsky.me" :icon "fa-link"}]}
+ :social [{:link "http://tonsky.me" :icon "fa-link"}]
+ :talk "https://www.youtube.com/watch?v=l1b7Da2DnPo"}
 
 The talk will include a brief overview of:
 

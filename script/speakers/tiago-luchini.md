@@ -2,7 +2,8 @@
  :title "Resilience by Design"
  :image "tiago-luchini.jpg"
  :social [{:link "https://twitter.com/tiagoluchini" :icon "fa-twitter"}
-          {:link "https://luchini.nyc" :icon "fa-link"}]}
+          {:link "https://luchini.nyc" :icon "fa-link"}]
+ :talk "https://www.youtube.com/watch?v=ss1v6jHGDfk"}
 
 Resiliency is the ability to recover from failures and continue to function. It is not about avoiding failures but accepting the fact that failures will happen and responding to them in a way that avoids downtime or data loss. The goal of resiliency is to return the application to a fully functioning state after a failure.
 

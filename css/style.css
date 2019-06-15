@@ -163,24 +163,14 @@ h6 {
   transition: all 0.5s;
 }
 
-#header #logo h1 {
-  font-size: 36px;
+#header #logo a h1 {
+  font-size: 16px;
   margin: 0;
-  padding: 6px 0;
-  line-height: 1;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  color: #63b132;
   letter-spacing: 3px;
   text-transform: uppercase;
-}
-
-#header #logo h1 span {
-  color: #63b132;
-}
-
-#header #logo h1 a,
-#header #logo h1 a:hover {
-  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  display: inline;
 }
 
 #header #logo img {
@@ -733,6 +723,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #speakers-details .details .social a i {
   font-size: 18px;
+}
+
+#speakers-details .details a h3 {
+  color: #112363;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 #speakers-details .details p {

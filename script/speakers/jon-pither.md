@@ -1,6 +1,7 @@
 {:name  "Jon Pither"
  :title "Keynote: The Crux of Bitemporality"
- :image "jon-pither.jpg"}
+ :image "jon-pither.jpg"
+ :talk "https://www.youtube.com/watch?v=3Stja6YUB94"}
 
 So you love immutability and want to time-travel your data. But then what happens when the data grows in size and you're integrating it from various upstream sources? What value of time do you want to time-travel against?
 

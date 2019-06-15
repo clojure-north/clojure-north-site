@@ -1,6 +1,7 @@
 {:name  "Leon Talbot"
  :title "'You May Also Like': Clojure, Solr 7, Neural Networks & Movies"
- :image "leon-talbot.jpg"}
+ :image "leon-talbot.jpg"
+ :talk "https://www.youtube.com/watch?v=3dJmdT28HTo"}
 
 The talk will be practical. We are developing a movie recommendation engine taking TMDB dataset (movies metadata (title, genre, overview, global rating, movie budget, etc.)) and adding GroupLens datasets (user profiles (age, occupation, gender) and their movie ratings) for machine learning powered re-ranking.
 

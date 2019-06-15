@@ -1,6 +1,7 @@
 {:name  "Tibor Kranjcec"
  :title "How is Keechma Different"
- :image "placeholder.jpg"}
+ :image "placeholder.jpg"
+ :talk "https://www.youtube.com/watch?v=yEAt4Y0VUlg"}
 
 Keechma is a frontend ClojureScript framework based on Reagent. In this talk Tibor covers the architectural differences from other frameworks and how Keechma enables him to deliver polished UI experiences to his customers.
 

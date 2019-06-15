@@ -491,6 +491,7 @@
                 <h3><a href="{{ speaker.details }}">{{ speaker.name }}</a></h3>
                 <p>{{ speaker.title }}</p>
                 <div class="social">
+                  {% if speaker.talk %}<a href="{{ speaker.talk }}" target="_blank"><i class="fa fa-play-circle"></i></a>{% endif %}
                   {% for item in speaker.social %}
                   <a href="{{ item.link }}" target="_blank"><i class="fa {{ item.icon }}"></i></a>
                   {% endfor %}

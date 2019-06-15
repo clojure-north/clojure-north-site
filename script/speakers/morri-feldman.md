@@ -1,6 +1,7 @@
 {:name  "Morri Feldman"
  :title "Lessons in Building a System that Processes More than 70 Billion Events Daily"
- :image "morri.jpg"}
+ :image "morri.jpg"
+ :talk "https://www.youtube.com/watch?v=VBIlk3GMmNc"}
 
 AppsFlyer’s mobile attribution and analysis platform is used by the biggest and most popular applications on Earth, generating a constant “storm” of 70B+ events (HTTP Requests) on their microservices, cloud based platform daily. In this talk, Morri will share their technological choices which include Clojure as their leading backend language - and the decisions to migrate from Python for improved multi-threading and concurrency.
 

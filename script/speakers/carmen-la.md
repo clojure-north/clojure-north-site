@@ -2,7 +2,8 @@
  :title "Aviary: Clinical Collaboration Platform"
  :image "carmen-la.jpg"
  :social [{:link "https://github.com/lacarmen" :icon "fa-github"}
- 		  {:link "http://carmen.la/" :icon "fa-link"}]}
+ 		  {:link "http://carmen.la/" :icon "fa-link"}]
+ :talk "https://www.youtube.com/watch?v=IekPZpfbdaI"}
 
 This talk will focus on the application development platform developed by our team at UHN. Our primary goal is to provide the ability to rapidly implement new forms and workflows without introducing downtimes. The user interfaces are composed from reusable components, and can be assembled with minimal involvement from technical resources using our Domain Specific Language (DSL) for defining screens and business logic.
 

@@ -1,7 +1,8 @@
 {:name "Balint Erdos"
  :title "Raising Services and People with Clojure"
  :image "balint-erdos.jpg"
- :social [{:link "https://github.com/valerauko" :icon "fa-github"}]}
+ :social [{:link "https://github.com/valerauko" :icon "fa-github"}]
+ :talk "https://www.youtube.com/watch?v=DL90i6RCwhs"}
 
 In this talk Balint and Katsuyasu discuss how they utilized Clojure's strengths to quickly release a new product, and at the same time raised team members from zero experience with Clojure to the point of individually developing production-ready code.
 

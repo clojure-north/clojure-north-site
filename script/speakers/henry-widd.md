@@ -1,7 +1,8 @@
 {:name "Henry Widd"
  :title "Cross Platform Awesomeness"
  :image "henry-widd.jpg"
- :social [{:link "http://widdindustries.com/" :icon "fa-link"}]}
+ :social [{:link "http://widdindustries.com/" :icon "fa-link"}]
+ :talk "https://www.youtube.com/watch?v=UFuL-ZDoB2U"}
 
 In many domains, writing code that runs cross platform is a big win. However, there's more to this than changing files to .cljc. This talk explains the why/how of cross platform Clojure and demonstrates a new date/time library 'tick' that goes a long way to enabling cross platform programs.
 

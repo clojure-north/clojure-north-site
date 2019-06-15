@@ -1,6 +1,7 @@
 {:name  "Thomas Getgood"
  :title "Residential Programming without Mutable State"
- :image "thomas-getgood.jpg"}
+ :image "thomas-getgood.jpg"
+ :talk "https://www.youtube.com/watch?v=Kgw9fblSOx4"}
 
 Residential programming isn't a popular idea nowadays, with systems like Smalltalk and InterLisp seen as fringe ideas, but tools like the REPL and Figwheel are great productivity boosters precisely because they give us back some of the power of residential programming. 
 

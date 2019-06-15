@@ -4,7 +4,8 @@
  :social [{:link "https://devth.com" :icon "fa-link"}
           {:link "https://yetibot.com" :icon "fa-link"}
           {:link "https://twitter.com/devth" :icon "fa-twitter"}
-          {:link "https://github.com/devth" :icon "fa-github"}]}
+          {:link "https://github.com/devth" :icon "fa-github"}]
+ :talk "https://www.youtube.com/watch?v=dIh4lEnCCkQ"}
 
 In this talk you'll learn how the Clojure language accelerated the design and development of a data driven application and translated into a powerful, expressive, culture-building platform heavily used in communal contexts.
 

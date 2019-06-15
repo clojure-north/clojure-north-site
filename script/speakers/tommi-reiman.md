@@ -2,7 +2,8 @@
  :title "Reitit, the Ancient Art of Routing"
  :image "tommi.jpg"
  :social [{:link "https://twitter.com/ikitommi" :icon "fa-twitter"}
-          {:link "https://github.com/ikitommi" :icon "fa-github"}]}
+          {:link "https://github.com/ikitommi" :icon "fa-github"}]
+ :talk "https://www.youtube.com/watch?v=cSntRGAjPiM"}
 
 Reitit is a new and fast isomorphic data-driven routing & dispatching library for Clojure/Script. Its key features are first-class route data, extensibility, composability and kick-ass performance.
 

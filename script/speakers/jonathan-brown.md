@@ -2,7 +2,8 @@
  :title "Distributed Computing in Clojure and Spark"
  :image "jonathan-brown.jpg"
  :social [{:link "https://www.linkedin.com/in/jonathan-brown-712b5612/" :icon "fa-linkedin"}
-          {:link "https://github.com/thejohnnybrown" :icon "fa-github"}]}
+          {:link "https://github.com/thejohnnybrown" :icon "fa-github"}]
+ :talk "https://www.youtube.com/watch?v=SkQLVQb6E8I"}
 
 Apache Spark is a distributed computing environment enabling data analytics tasks to run on a variety of computing platforms and languages. In this talk Jonathan covers how to write a data processing program in Clojure and deploy it to a spark cluster on Kubernetes.
 
