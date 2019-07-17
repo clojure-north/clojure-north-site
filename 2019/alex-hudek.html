@@ -13,7 +13,7 @@
   </script>
 
   <meta charset="utf-8">
-  <title>Clojure/north 2020 | {{ pageTitle }}</title>
+  <title>Clojure/north 2019 | Lessons Learned Creating a Successful Machine Learning Startup with Clojure by Alex Hudek</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Clojure conference in Toronto, Canada" name="description">
 
@@ -37,7 +37,7 @@
 
   <!-- Meta Tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Clojure/north 2020 {{ ogTitle }}" />
+  <meta property="og:title" content="Clojure/north 2019 | Alex Hudek" />
   <meta property="og:description" content="Clojure conference in Toronto, Canada" />
   <meta property="og:image" content="https://clojurenorth.com/img/logo-2x.png" />
   <meta property="og:url" content="http://clojurenorth.com/" />
@@ -64,36 +64,62 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="{% if isIndex %}{% else %}index.html{% endif %}#intro" class="scrollto"><img src="img/logo-icon.png" alt="" title="Clojure/north"><h1>Clojure/north 2020</h1></a>
+        <a href="index.html#intro" class="scrollto"><img src="img/logo-icon.png" alt="" title="Clojure/north"><h1>Clojure/north 2019</h1></a>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#about">About</a></li>
-          <!--
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#schedule">Schedule</a></li>
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#speakers">Speakers</a></li>
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#sponsors">Sponsors</a></li>
-          -->
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#faq">FAQ</a></li>
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#contact">Contact</a></li>
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#conduct">Code of Conduct</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Past Events
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="2019">Clojure/north 2019</a>
-            </div>
-          </li>
-          <!-- <li class="buy-tickets"><a href="https://ti.to/clojure-north/clojure-north-2020" target="_blank">Registration</a></li> -->
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="index.html#speakers">Speakers</a></li>
+          <li><a href="index.html#sponsors">Sponsors</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#conduct">Code of Conduct</a></li>
+          <li class="buy-tickets"><a href="https://ti.to/clojure-north/clojure-north-2019" target="_blank">Registration</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
 
-  {% block content %}{% endblock %}
+  
+<main id="main" class="main-page">
+
+  <!--==========================
+    Speaker Details Section
+  ============================-->
+  <section id="speakers-details" class="wow fadeIn">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-6">
+          
+          <img src="img/speakers/alex-hudek.jpg" alt="Alex Hudek" class="img-fluid">
+          
+        </div>
+
+        <div class="col-md-6">
+          <div class="details">
+            <h2>Alex Hudek</h2>
+            
+            
+            <h3><a href="https://www.youtube.com/watch?v=u-4FiFpkPlQ" target="_blank">Lessons Learned Creating a Successful Machine Learning Startup with Clojure <i class="fa fa-play-circle"></i></a></h3>
+            
+            <p>In this talk Alex will share why he chose to found a machine learning company with Clojure, what worked, what didn’t, and how they scaled their technology team from 3 people to over 40. Alex will explain where they use Clojure, and where they don’t, and why. How Clojure’s strengths and weaknesses change with your team size. Which assumptions he made about Clojure when founding the company that changed over time, and which turned out to be correct. </p>
+<hr>
+<h3>About Alex</h3>
+<p>Alex is the Co-founder and CTO of Kira Systems and leads the technology, design, and research groups. He holds Ph.D and M.Math degrees in Computer Science from the University of Waterloo, and a B.Sc. from the University of Toronto in Physics and Computer Science. His past research in the field of bioinformatics focused on finding similarities between DNA sequences, and he helped assemble the first complete draft of human chromosome 7. He has also worked in the areas of proof systems and database query compilation.</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
 
   <!--==========================
     Footer
@@ -104,13 +130,11 @@
       <div class="copyright">
         <strong>Clojure/north</strong> is organized with the lovely help of 
         <a href="https://www.linkedin.com/in/nikolaperic">Nikola Peric</a>, 
-        <a href="https://github.com/yogthos">Dmitri Sotnikov</a>, 
-        <a href="https://github.com/lacarmen">Carmen La</a>, 
+        <a href="https://yogthos.net">Dmitri Sotnikov</a>, 
+        <a href="https:/carmen.la">Carmen La</a>, 
         <a href="https://www.lubovsoltan.com/">Lubov Soltan</a>, 
         <a href="https://twitter.com/johnnytong">Johnny Tong</a>,
         <a href="https://www.thatfighterjet.com/">Raey Ang</a>, 
-        <a href="https://www.linkedin.com/in/maximilian-gerlach-1556b622">Max Gerlach</a>, 
-        <a href="http://langnostic.inaimathi.ca/">Leo Zovic</a>
         and others from the <a href="https://www.meetup.com/Clojure-Toronto/">Clojure TO community</a>.
       </div>
       <div class="credits">

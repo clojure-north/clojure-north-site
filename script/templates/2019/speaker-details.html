@@ -1,0 +1,48 @@
+{% extends "2019/base.html" %}
+
+{% set pageTitle %}{{ title }} by {{ name }}{% endset %}
+{% set ogTitle %}| {{ name }}{% endset %}
+{% set isIndex = false %}
+
+{% block content %}
+<main id="main" class="main-page">
+
+  <!--==========================
+    Speaker Details Section
+  ============================-->
+  <section id="speakers-details" class="wow fadeIn">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-6">
+          {% if image %}
+          <img src="img/speakers/{{ image }}" alt="{{ name }}" class="img-fluid">
+          {% endif %}
+        </div>
+
+        <div class="col-md-6">
+          <div class="details">
+            <h2>{{ name }}</h2>
+            {% if social %}
+            <div class="social">
+              {% for item in social %}
+              <a href="{{ item.link }}" target="_blank"><i class="fa {{ item.icon }}"></i></a>
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% if talk %}
+            <h3><a href="{{ talk }}" target="_blank">{{ title }} <i class="fa fa-play-circle"></i></a></h3>
+            {% else %}
+            <h3>{{ title }}</h3>
+            {% endif %}
+            {{ details | safe}}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</main>
+{% endblock %}

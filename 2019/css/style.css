@@ -223,6 +223,25 @@ h6 {
   min-width: 180px;
 }
 
+/* Nav Menu Arrows */
+
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
 /* Nav Meu Container */
 
 #nav-menu-container {
@@ -269,28 +288,6 @@ h6 {
 .nav-menu .menu-active > a:before {
   visibility: visible;
   width: 100%;
-}
-
-.nav-menu .dropdown-menu {
-  background-color: #0a1026;
-  border: 1px solid rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0 6px 12px rgba (0, 0 ,0, .175);
-  box-shadow: 0 6px 12px rgba (0, 0 ,0, .175);
-}
-
-.nav-menu .dropdown-menu .divider {
-  border: 1px solid rgba (0, 0, 0, 0.8);
-}
-
-.nav-menu .dropdown-menu > a {
-  color: rgba(202, 206, 221, 0.8);
-}
-
-.nav-menu .dropdown-menu > a:hover,
-.nav-menu .dropdown-menu > a:focus {
-  color: #ffffff;
-  background-color: transparent;
 }
 
 .nav-menu li.buy-tickets a {
@@ -541,13 +538,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Tickets Section
---------------------------------------------------------------*/
-
-#tickets .section-header {
-  padding-top: 60px;
-}
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/

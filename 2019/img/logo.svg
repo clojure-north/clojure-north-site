@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <g fill="none" fill-rule="evenodd">
+    <text fill="#63B132" font-family="OpenSans-Regular, Open Sans" font-size="23.4" letter-spacing="4.383">
+      <tspan x="81" y="295">CLOJURE/NORT</tspan> <tspan x="300.892" y="295">H</tspan>
+    </text>
+    <path stroke="#63B132" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" d="M205.287684,171 L180,213.972176"/>
+    <polyline stroke="#63B132" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" points="232 214.136 181.569 127.117 114 243.792 284.569 243.792 200.285 99"/>
+  </g>
+</svg>

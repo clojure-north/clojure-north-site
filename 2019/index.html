@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56703143-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-56703143-3');
+  </script>
+
+  <meta charset="utf-8">
+  <title>Clojure/north 2019 | Clojure Conference - Toronto, Canada</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Clojure conference in Toronto, Canada" name="description">
+
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Clojure/north 2019 " />
+  <meta property="og:description" content="Clojure conference in Toronto, Canada" />
+  <meta property="og:image" content="https://clojurenorth.com/img/logo-2x.png" />
+  <meta property="og:url" content="http://clojurenorth.com/" />
+  <meta property="og:site_name" content="Clojure/north" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:site" content="@clojurenorth" />
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" class="header-fixed">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="img/logo-icon.png" alt="" title="Clojure/north"><h1>Clojure/north 2019</h1></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#conduct">Code of Conduct</a></li>
+          <li class="buy-tickets"><a href="https://ti.to/clojure-north/clojure-north-2019" target="_blank">Registration</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  
+  <!-- Tito -->
+  <script src='https://js.tito.io/v1' async></script>
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <img src="img/logo-2x.png" style="max-height:55%;" alt="Clojure/north" title="Clojure/north"/>
+      <p class="mb-4 pb-0">April 19th - 20th, 2019</p>
+      <p class="mb-4 pb-0">Toronto, Canada</p>
+
+      <a href="https://ti.to/clojure-north/clojure-north-2019" target="_blank" class="about-btn scrollto">Register</a>
+      <!-- <a href="" class="about-btn scrollto">Register Now</a>-->
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Event</h2>
+            <p>Clojure/north is Canada's first Clojure conference. It is a non-profit event from the Clojure community for the community. Our goal is to share knowledge and be an accessible, enjoyable event for newcomers and veterans to Clojure.</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Where</h3>
+            <p><a href="https://www3.hilton.com/en/hotels/ontario/hilton-toronto-TORHIHH/index.html" target="_blank">Hilton Toronto</a></p>
+            <p>145 Richmond Street West, Toronto, ON M5H 2L2</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p>Friday-Saturday<br>April 19th - 20th, 2019</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Tickets Section
+    ============================-->
+
+    <section id="tickets">
+      <div class="container wow fadeIn">
+        <tito-widget event="clojure-north/clojure-north-2019"></tito-widget>
+
+        <!-- for basic styles include a link to our stylesheet. -->
+        <!-- fancy something more adventurous? Copy it and roll your own! -->
+        <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
+      </div>
+    </section>
+
+    <!--==========================
+      Schedule Section
+    ============================-->
+    <section id="schedule" class="section-with-bg">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h2>Event Schedule</h2>
+        </div>
+
+        <p>In order to be an accessible event for newcomers as well as those familiar with Clojure there are two streams -- one which focuses on advanced topics using the language, and one that's less technical and either more introductory or focused on how Clojure is used in real-world situations. Of course you're not limited to either and can swap between the two as often as you like during the event.</p>
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">April 19</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">April 20</a>
+          </li>
+        </ul>
+
+        <div class="tab-content row justify-content-center">
+
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-12 tab-pane fade show active" id="day-1">
+
+            <div class="row schedule-item">
+              <div class="col-2"></div>
+              <div class="col-5">
+                <h4>Advanced Clojure</h4>
+              </div>
+              <div class="col-5">
+                <h4>Intro to Clojure & Case Studies</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>08:45 AM</time></div>
+              <div class="col-5">
+                <h4>Registration</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>09:15 AM</time></div>
+              <div class="col-5">
+                <h4>Introduction</h4>
+              </div>
+              <div class="col-5">
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>09:30 AM</time></div>
+
+              <div class="col-10">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/jon-pither.jpg">
+                </div>
+                <div class="details">
+                  <h4>Keynote: The Crux of Bitemporality</h4>
+                  <p>Unveiling of JUXT's new bitemporal database</p>
+                  <a href="jon-pither.html">Jon Pither</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>10:30 AM</time></div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/jonathan-brown.jpg">
+                </div>
+                <div class="details">
+                  <h4>Distributed Computing in Clojure and Spark</h4>
+                  <p>Benefits of distributed analytics with Clojure</p>
+                  <a href="jonathan-brown.html">Jonathan Brown</a>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/trevor.jpg">
+                </div>
+                <div class="details">
+                  <h4>Growing a chatops platform and having fun with Clojure</h4>
+                  <p>How Clojure enabled the development of Yetibot</p>
+                  <a href="trevor-hartman.html">Trevor Hartman</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>11:20 AM</time></div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/placeholder.jpg">
+                </div>
+                <div class="details">
+                  <h4>Stupid Web Games in Common Lisp</h4>
+                  <p>Interactive live-coding game dev session</p>
+                  <a href="#">Leo Zovic</a>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/simon-belak.jpg">
+                </div>
+                <div class="details">
+                  <h4>Where to Start?</h4>
+                  <p>How to start working on a large Clojure codebase, and make onboarding painless</p>
+                  <a href="simon-belak.html">Simon Belak</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>12:10 PM</time></div>
+              <div class="col-5">
+                <h4>Lunch</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>01:10 PM</time></div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/ramsey-nasser.jpg">
+                </div>
+                <div class="details">
+                  <h4>Fn and Games with Arcadia</h4>
+                  <p>Using Clojure's functional semantics and lisp idioms in game development</p>
+                  <a href="ramsey-nasser.html">Ramsey Nasser</a>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/anatoly.jpg">
+                </div>
+                <div class="details">
+                  <h4>Machine Learning: from ABCs to DEFs</h4>
+                  <p>In practice machine learning is simpler than it seems</p>
+                  <a href="anatoly-polinsky.html">Anatoly Polinksy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>02:00 PM</time></div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/leon-talbot.jpg">
+                </div>
+                <div class="details">
+                  <h4>"You may also like"</h4>
+                  <p>Clojure, Solr 7, Neural Networks & Movies</p>
+                  <a href="leon-talbot.html">Leon Talbot</a>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/rafal-dittwald.jpg">
+                </div>
+                <div class="details">
+                  <h4>Solving Problems the Clojure Way</h4>
+                  <p>How functional programming differs</p>
+                  <a href="rafal-dittwald.html">Rafal Dittwald</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>02:50 PM</time></div>
+              <div class="col-5">
+                <h4>Break</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>03:20 PM</time></div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/placeholder.jpg">
+                </div>
+                <div class="details">
+                  <h4>How is Keechma Different</h4>
+                  <p>Overview of Keechma controllers and how to use them</p>
+                  <a href="tibor-kranjcec.html">Tibor Kranjcec</a>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/alex-hudek.jpg">
+                </div>
+                <div class="details">
+                  <h4>Lessons Learned Creating a Successful Machine Learning Startup with Clojure </h4>
+                  <a href="alex-hudek.html">Alex Hudek</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>04:10 PM</time></div>
+              <div class="col-10">
+                <h4>Lightning Talks</h4>
+                <p>Software, but not as we know it (<strong><a href="dann-toliver.html">Dann Toliver</a></strong>)</p>
+                <p>Composing Applications (<strong><a href="rafal-dittwald.html">Rafal Dittwald</a></strong>)</p>
+                <p>Data-driven scripting with ClojureScript, EDN, and Lumo (<strong><a href="scot-brown.html">Scot Brown</a></strong>)</p>
+                <p></p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 1 -->
+
+          <!-- Schdule Day 2 -->
+          <div role="tabpanel" class="col-lg-12 tab-pane fade show" id="day-2">
+
+            <div class="row schedule-item">
+              <div class="col-2"></div>
+              <div class="col-5">
+                <h4>Advanced Clojure</h4>
+              </div>
+              <div class="col-5">
+                <h4>Intro to Clojure & Case Studies</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>09:00 AM</time></div>
+              <div class="col-5">
+                <h4>Welcome Back</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>09:10 AM</time></div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/tiago-luchini.jpg">
+                </div>
+                <div class="details">
+                  <h4>Resilience by Design</h4>
+                  <p>Fault-tolerant strategies employed in resilient systems</p>
+                  <a href="tiago-luchini.html">Tiago Luchini</a>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/martin-klepsch.jpg">
+                </div>
+                <div class="details">
+                  <h4>cljdoc</h4>
+                  <p>Better documentation tooling for the Clojure/Script ecosystem</p>
+                  <a href="martin-klepsch.html">Martin Klepsch</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>10:00 AM</time></div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/mike-fikes.jpg">
+                </div>
+                <div class="details">
+                  <h4>Expeditious Code via Inference</h4>
+                  <p>Greater insight into inference with the ClojureScript compiler</p>
+                  <a href="mike-fikes.html">Mike Fikes</a>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/henry-widd.jpg">
+                </div>
+                <div class="details">
+                  <h4>Cross Platform Awesomeness</h4>
+                  <p>Leverage cross platform running code</p>
+                  <a href="henry-widd.html">Henry Widd</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>11:00 AM</time></div>
+              <div class="col-10">
+                <h4>Panel</h4>
+                <p>Featuring Jon Pither, Morri Feldman, and Simon Belak</p>
+                <p>Moderated by Dann Toliver</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>12:10 AM</time></div>
+              <div class="col-5">
+                <h4>Lunch</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>01:10 PM</time></div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/tommi.jpg">
+                </div>
+                <div class="details">
+                  <h4>Reitit, the Ancient Art of Routing</h4>
+                  <p>Design principles of the data-driven routing library, Reitit</p>
+                  <a href="tommi-reiman.html">Tommi Reiman</a>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/eric-fode.jpg">
+                </div>
+                <div class="details">
+                  <h4>Improving yesterday</h4>
+                  <p>Growing an IoT grow pipeline</p>
+                  <a href="eric-fode.html">Eric Fode</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>02:00 PM</time></div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/thomas-getgood.jpg">
+                </div>
+                <div class="details">
+                  <h4>Residential Programming without Mutable State</h4>
+                  <p>The power of residential programming</p>
+                  <a href="thomas-getgood.html">Thomas Getgood</a>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/dmitri-sotnikov.jpg">
+                </div>
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/carmen-la.jpg">
+                </div>
+                <div class="details" >
+                  <h4>Aviary: Clinical Collaboration Platform</h4>
+                  <a href="dmitri-sotnikov.html">Dmitri Sotnikov</a> & <a href="carmen-la.html">Carmen La</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>02:50 PM</time></div>
+              <div class="col-5">
+                <h4>Break</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>03:20 PM</time></div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/morri.jpg">
+                </div>
+                <div class="details">
+                  <h4>Lessons in Building a System that Processes More than 70 Billion Events Daily</h4>
+                  <a href="morri-feldman.html">Morri Feldman</a>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/nikita-prokopov.jpg">
+                </div>
+                <div class="details">
+                  <h4>Building My Own Clojure Tools</h4>
+                  <p>A great starting point for any new developers</p>
+                  <a href="nikita-prokopov.html">Nikita Prokopov</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-2"><time>04:10 PM</time></div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/james-cash.jpg">
+                </div>
+                <div class="details">
+                  <h4>Crawling Inside the Tauntaun</h4>
+                  <p>Case studies in archaic debugging</p>
+                  <a href="james-cash.html">James Cash</a>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/balint-erdos.jpg">
+                </div>
+                <div class="speaker d-none d-sm-block">
+                  <img src="img/speakers/katsuyasu-murata.jpg">
+                </div>
+                <div class="details">
+                  <h4>Raising Services and People with Clojure</h4>
+                  <a href="balint-erdos.html">Balint Erdos</a> & <a href="katsuyasu-murata.html">Katsuyasu Murata</a>
+                <div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 2 -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+    <section id="speakers" class="wow fadeIn">
+      <div class="container">
+        <div class="section-header">
+          <h2>Event Speakers</h2>
+        </div>
+
+
+        <div class="row">
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="jon-pither.html"><img src="img/speakers/jon-pither.jpg" alt="Jon Pither" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="jon-pither.html">Jon Pither</a></h3>
+                <p>Keynote: The Crux of Bitemporality</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=3Stja6YUB94" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="tommi-reiman.html"><img src="img/speakers/tommi.jpg" alt="Tommi Reiman" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="tommi-reiman.html">Tommi Reiman</a></h3>
+                <p>Reitit, the Ancient Art of Routing</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=cSntRGAjPiM" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="https://twitter.com/ikitommi" target="_blank"><i class="fa fa-twitter"></i></a>
+                  
+                  <a href="https://github.com/ikitommi" target="_blank"><i class="fa fa-github"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="mike-fikes.html"><img src="img/speakers/mike-fikes.jpg" alt="Mike Fikes" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="mike-fikes.html">Mike Fikes</a></h3>
+                <p>Expeditious Code via Inference</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=tPnCtXrwvIw" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="rafal-dittwald.html"><img src="img/speakers/rafal-dittwald.jpg" alt="Rafal Dittwald" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="rafal-dittwald.html">Rafal Dittwald</a></h3>
+                <p>Solving Problems the Clojure Way</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=vK1DazRK_a0" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="https://github.com/rafd" target="_blank"><i class="fa fa-github"></i></a>
+                  
+                  <a href="https://github.com/cognitory" target="_blank"><i class="fa fa-github"></i></a>
+                  
+                  <a href="https://github.com/braidchat" target="_blank"><i class="fa fa-github"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="ramsey-nasser.html"><img src="img/speakers/ramsey-nasser.jpg" alt="Ramsey Nasser" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="ramsey-nasser.html">Ramsey Nasser</a></h3>
+                <p>Fn and Games with Arcadia</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=LbS45w_aSCU" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="tiago-luchini.html"><img src="img/speakers/tiago-luchini.jpg" alt="Tiago Luchini" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="tiago-luchini.html">Tiago Luchini</a></h3>
+                <p>Resilience by Design</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=ss1v6jHGDfk" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="https://twitter.com/tiagoluchini" target="_blank"><i class="fa fa-twitter"></i></a>
+                  
+                  <a href="https://luchini.nyc" target="_blank"><i class="fa fa-link"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="anatoly-polinsky.html"><img src="img/speakers/anatoly.jpg" alt="Anatoly Polinsky" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="anatoly-polinsky.html">Anatoly Polinsky</a></h3>
+                <p>Machine Learning: from ABCs to DEFs</p>
+                <div class="social">
+                  
+                  
+                  <a href="https://github.com/tolitius" target="_blank"><i class="fa fa-github"></i></a>
+                  
+                  <a href="https://www.dotkam.com/" target="_blank"><i class="fa fa-link"></i></a>
+                  
+                  <a href="https://twitter.com/tolitius" target="_blank"><i class="fa fa-twitter"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="james-cash.html"><img src="img/speakers/james-cash.jpg" alt="James Cash" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="james-cash.html">James Cash</a></h3>
+                <p>Crawling Inside the Tauntaun</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=uTxmI5y47l4" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="https://bloomventures.io" target="_blank"><i class="fa fa-link"></i></a>
+                  
+                  <a href="https://occasionallycogent.com" target="_blank"><i class="fa fa-link"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="tibor-kranjcec.html"><img src="img/speakers/placeholder.jpg" alt="Tibor Kranjcec" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="tibor-kranjcec.html">Tibor Kranjcec</a></h3>
+                <p>How is Keechma Different</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=yEAt4Y0VUlg" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="jonathan-brown.html"><img src="img/speakers/jonathan-brown.jpg" alt="Jonathan Brown" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="jonathan-brown.html">Jonathan Brown</a></h3>
+                <p>Distributed Computing in Clojure and Spark</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=SkQLVQb6E8I" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="https://www.linkedin.com/in/jonathan-brown-712b5612/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  
+                  <a href="https://github.com/thejohnnybrown" target="_blank"><i class="fa fa-github"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="trevor-hartman.html"><img src="img/speakers/trevor.jpg" alt="Trevor Hartman" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="trevor-hartman.html">Trevor Hartman</a></h3>
+                <p>Growing a Chatops Platform and Having Fun with Clojure</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=dIh4lEnCCkQ" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="https://devth.com" target="_blank"><i class="fa fa-link"></i></a>
+                  
+                  <a href="https://yetibot.com" target="_blank"><i class="fa fa-link"></i></a>
+                  
+                  <a href="https://twitter.com/devth" target="_blank"><i class="fa fa-twitter"></i></a>
+                  
+                  <a href="https://github.com/devth" target="_blank"><i class="fa fa-github"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="balint-erdos.html"><img src="img/speakers/balint-erdos.jpg" alt="Balint Erdos" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="balint-erdos.html">Balint Erdos</a></h3>
+                <p>Raising Services and People with Clojure</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=DL90i6RCwhs" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="https://github.com/valerauko" target="_blank"><i class="fa fa-github"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="katsuyasu-murata.html"><img src="img/speakers/katsuyasu-murata.jpg" alt="Katsuyasu Murata" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="katsuyasu-murata.html">Katsuyasu Murata</a></h3>
+                <p>Raising Services and People with Clojure</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=DL90i6RCwhs" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="martin-klepsch.html"><img src="img/speakers/martin-klepsch.jpg" alt="Martin Klepsch" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="martin-klepsch.html">Martin Klepsch</a></h3>
+                <p>cljdoc — Better Documentation Tooling for the Clojure/Script Ecosystem</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=8klBWIwYfsY" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="https://twitter.com/martinklepsch" target="_blank"><i class="fa fa-twitter"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="dmitri-sotnikov.html"><img src="img/speakers/dmitri-sotnikov.jpg" alt="Dmitri Sotnikov" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="dmitri-sotnikov.html">Dmitri Sotnikov</a></h3>
+                <p>Aviary: Clinical Collaboration Platform</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=IekPZpfbdaI" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="https://github.com/yogthos" target="_blank"><i class="fa fa-github"></i></a>
+                  
+                  <a href="https://twitter.com/yogthos" target="_blank"><i class="fa fa-twitter"></i></a>
+                  
+                  <a href="http://yogthos.net/" target="_blank"><i class="fa fa-link"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="carmen-la.html"><img src="img/speakers/carmen-la.jpg" alt="Carmen La" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="carmen-la.html">Carmen La</a></h3>
+                <p>Aviary: Clinical Collaboration Platform</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=IekPZpfbdaI" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="https://github.com/lacarmen" target="_blank"><i class="fa fa-github"></i></a>
+                  
+                  <a href="http://carmen.la/" target="_blank"><i class="fa fa-link"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="leon-talbot.html"><img src="img/speakers/leon-talbot.jpg" alt="Leon Talbot" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="leon-talbot.html">Leon Talbot</a></h3>
+                <p>&#39;You May Also Like&#39;: Clojure, Solr 7, Neural Networks &amp; Movies</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=3dJmdT28HTo" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="henry-widd.html"><img src="img/speakers/henry-widd.jpg" alt="Henry Widd" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="henry-widd.html">Henry Widd</a></h3>
+                <p>Cross Platform Awesomeness</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=UFuL-ZDoB2U" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="http://widdindustries.com/" target="_blank"><i class="fa fa-link"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="morri-feldman.html"><img src="img/speakers/morri.jpg" alt="Morri Feldman" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="morri-feldman.html">Morri Feldman</a></h3>
+                <p>Lessons in Building a System that Processes More than 70 Billion Events Daily</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=VBIlk3GMmNc" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="simon-belak.html"><img src="img/speakers/simon-belak.jpg" alt="Simon Belak" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="simon-belak.html">Simon Belak</a></h3>
+                <p>Where to Start?</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=sT8LIdfH4ak" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="https://twitter.com/sbelak" target="_blank"><i class="fa fa-twitter"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="nikita-prokopov.html"><img src="img/speakers/nikita-prokopov.jpg" alt="Nikita Prokopov" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="nikita-prokopov.html">Nikita Prokopov</a></h3>
+                <p>Building My Own Clojure Tools</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=l1b7Da2DnPo" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                  <a href="http://tonsky.me" target="_blank"><i class="fa fa-link"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="thomas-getgood.html"><img src="img/speakers/thomas-getgood.jpg" alt="Thomas Getgood" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="thomas-getgood.html">Thomas Getgood</a></h3>
+                <p>Residential Programming without Mutable State</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=Kgw9fblSOx4" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="eric-fode.html"><img src="img/speakers/eric-fode.jpg" alt="Eric Fode" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="eric-fode.html">Eric Fode</a></h3>
+                <p>Improving Yesterday</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=2mGl66xHIuw" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="alex-hudek.html"><img src="img/speakers/alex-hudek.jpg" alt="Alex Hudek" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="alex-hudek.html">Alex Hudek</a></h3>
+                <p>Lessons Learned Creating a Successful Machine Learning Startup with Clojure</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=u-4FiFpkPlQ" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="scot-brown.html"><img src="img/speakers/scot-brown.jpg" alt="Scot Brown" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="scot-brown.html">Scot Brown</a></h3>
+                <p>Data-driven scripting with ClojureScript, EDN, and Lumo</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=dzXZVnfp2TA" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <a href="dann-toliver.html"><img src="img/speakers/dann-toliver.jpg" alt="Dann Toliver" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="dann-toliver.html">Dann Toliver</a></h3>
+                <p>Software, but not as we know it</p>
+                <div class="social">
+                  <a href="https://www.youtube.com/watch?v=iLeaXt9Bi58" target="_blank"><i class="fa fa-play-circle"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Sponsors Section
+    ============================-->
+    <section id="sponsors" class="section-with-bg wow fadeIn">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+          <p>Clojure/north is a non-profit conference so every dollar you put in goes directly towards making the event a better experience for everyone. You can view the package attached.</p>
+          <p><a href="clojure-north-2019-sponsorship-package.pdf">Sponsor package</a></p>
+        </div>
+
+        <div class="row no-gutters sponsors-wrap clearfix">
+
+          <div class="col-sm-12">
+            <h2>Gold Tier Sponsors</h2>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <a href="http://synqrinus.com/" target="_blank">
+              <div class="s-logo">
+                <img src="img/sponsors/SynqrinusLogo.jpg" class="img-fluid" alt="Synqrinus">
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-xs-12">
+            <a href="https://pitch.com/" target="_blank">
+              <div class="s-logo">
+                <img src="img/sponsors/PitchLogo.png" class="img-fluid" alt="Pitch">
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-xs-12">
+            <a href="https://kirasystems.com/" target="_blank">
+              <div class="s-logo">
+                <img src="img/sponsors/KiraLogo.png" class="img-fluid" alt="Kira Systems">
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-xs-12">
+            <a href="https://juxt.pro/" target="_blank">
+              <div class="s-logo">
+                <img src="img/sponsors/juxt-logo.svg" class="img-fluid" alt="JUXT">
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-12">
+            <h3>Silver Tier Sponsors</h3>
+          </div>
+          <div class="col-md-4 col-xs-6">
+            <a href="https://cognitect.com/" target="_blank">
+              <div class="s-logo">
+                <img src="img/sponsors/CognitectLogo.png" class="img-fluid" alt="Cognitect">
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-xs-6">
+            <a href="https://www.ada.support" target="_blank">
+              <div class="s-logo">
+                <img src="img/sponsors/AdaLogo.svg" class="img-fluid" alt="Ada">
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-12">
+            <br/>
+            <h4>Bronze Tier Sponsors</h4>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="https://www.metosin.fi/en/" target="_blank">
+              <div class="s-logo">
+                <img src="img/sponsors/MetosinLogo.png" class="img-fluid" alt="Metosin">
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-12">
+            <br/>
+            <h4>Education Sponsor</h4>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="https://www.manning.com/" target="_blank">
+              <div class="s-logo">
+                <img src="img/sponsors/ManningLogo.png" class="img-fluid" alt="Manning Publications">
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-12">
+            <br/>
+            <h4>Media Partners</h4>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <a href="https://www.techevents.online" target="_blank">
+              <div class="s-logo">
+                <img src="img/sponsors/TechEventsLogo.png" class="img-fluid" alt="TechEvents Online">
+              </div>
+            </a>
+          </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      F.A.Q Section
+    ============================-->
+    <section id="faq" class="wow fadeIn">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+              <ul id="faq-list">
+
+                <li>
+                  <a data-toggle="collapse" class="collapsed faq-toggle" href="#faq1">How to get there? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq1" class="collapse" data-parent="#faq-list">
+                    <p>
+                      The hotel is located at <a href="https://goo.gl/maps/2WYmuySRiY22">145 Richmond Street, Toronto, ON M5H 2L2</a>. You can click on the link to go to Google Maps and ask for directions.
+                    </p>
+                    <p>
+                    	If you are coming from the airport, you can take a taxi or rent a car from the airport and <a href="https://goo.gl/maps/sb1rtF1THZ82">drive to the location</a> by heading south on highway 427, turning east onto the Gardiner Expressway, and taking the Bay Street exit. <a href="https://goo.gl/maps/eDVF4mxAcN42">Public transit options</a> include taking the "UP Express" from the UP Express terminal at Pearson Airport to Union, then boarding the subway heading north towards Vaughan Metropolitan Centre Stationfor three stops, getting off at Osgoode Station.
+                    </p>
+                    <p>
+                    	Generally speaking, from within the city you can get there on public transit if you get off the subway at Osgoode station and walk south. If you are taking a streetcar, you would take the Queen streetcar exiting at Unviersity and walk south, or King streetcar exiting at University and walk north.
+                    </p>
+                    <p>
+                    	Toronto has a <a href="https://bikesharetoronto.com/">public bikeshare service</a> that you can look into during your stay here. There is a <a href="https://bikesharetoronto.com/get-pass/">$15 three-day pass</a>.
+                    </p>
+                    <p>
+                    	You may also be interested in various <a href="http://www.ttc.ca/Fares_and_passes/index.jsp">TTC (public transit system) day passes or other passes</a>.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#faq2" class="collapsed faq-toggle">Where can I stay? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq2" class="collapse" data-parent="#faq-list">
+                    <p>
+                      There are many hotels near the venue, including the venue itself. Below are some that are in walking distance of the event venue.
+                    </p>
+                    <ul>
+                    	<li><a href="https://www3.hilton.com/en/hotels/ontario/hilton-toronto-TORHIHH/index.html">Hilton Toronto <strong>(event venue)</strong></a></li>
+                    	<li><a href="http://www.therex.ca/">The Rex Hotel Jazz</a></li>
+                    	<li><a href="https://www.marriott.com/hotels/travel/yyztc-sheraton-centre-toronto-hotel/">Sheraton Centre Toronto</a></li>
+                    	<li><a href="https://www.thestrathconahotel.com/">The Strathacona</a></li>
+                    	<li><a href="http://www.shangri-la.com/toronto/shangrila/">Shangri-La Toronto</a></li>
+                    	<li><a href="https://www.fairmont.com/royal-york-toronto/">Fairmont Royal York</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#faq3" class="collapsed faq-toggle">What to do in Toronto? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq3" class="collapse" data-parent="#faq-list">
+                    <p>
+                      The event venue is smack dab in the centre of downtown so you'll have plenty of options!
+                    </p>
+                    <p>
+                    	Just to name a few there is the iconic <a href="https://www.cntower.ca/intro.html">CN Tower</a>, <a href="https://www.ripleyaquariums.com/canada/">Ripley's Aquarium</a>, the <a href="https://www.rom.on.ca/en">Royal Ontario Museum (ROM)</a>, the <a href="https://ago.ca/">Art Gallery of Ontario (AGO)</a>, <a href="http://www.stlawrencemarket.com/">St. Lawrence Market</a>, and the <a href="https://www.cfshops.com/toronto-eaton-centre.html">Eaton's Centre</a>.
+                    </p>
+                    <p>
+                    	While Toronto is a more walkable city than most North American cities, it isn't as walkable as any major European city. You may want to consider a bike or transit pass while here if you wish to explore the broader city.
+                    </p>
+                    <p>
+                    	For more options take a look at <a href="https://www.toronto.com/things-to-do/this-weekend-things-to-do-in-toronto/">Toronto's website</a>. <a href="https://www.tripadvisor.ca/Attractions-g155019-Activities-Toronto_Ontario.html">Trip Advisor</a> also has a list of top activities to do in the city.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#faq4" class="collapsed faq-toggle">How do I use a student discount? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq4" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Please send us an email at <a href="mailto:hello@clojurenorth.com">hello@clojurenorth.com</a> with a copy of some sort of verification you're enrolled in a post-secondary institution (student ID, timesheet, formal verification from institution, etc.), and we will reply to you with details on how to get your discounted ticket.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      Subscribe Section
+    ============================-->
+    <!-- <section id="subscribe">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Mailing List</h2>
+        </div>
+
+        <form action="https://clojurenorth.us19.list-manage.com/subscribe/post?u=e219b167e772f2dfcb412f704&amp;id=228c94ca55" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+
+            <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+              <div class="content__gdpr">
+                <h3>Marketing Permissions</h3>
+                <p>Please select all the ways you would like to hear from ClojureNorth:</p>
+
+                <div class="row">
+                  <div class="col-12 offset-md-2 col-md-8">
+                    <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+                      <div class="row justify-content-center">
+                        <div class="col-auto">
+                          <label class="checkbox subfield" for="gdpr_14843">
+                            <input type="checkbox" id="gdpr_14843" name="gdpr[14843]" value="Y" class="av-checkbox ">
+                            <span>Event Emails</span>
+                          </label>
+                        </div>
+                        <div class="col-auto">
+                          <label class="checkbox subfield" for="gdpr_14847">
+                            <input type="checkbox" id="gdpr_14847" name="gdpr[14847]" value="Y" class="av-checkbox ">
+                            <span>Direct Mail</span>
+                          </label>
+                        </div>
+                        <div class="col-auto">
+                          <label class="checkbox subfield" for="gdpr_14851">
+                            <input type="checkbox" id="gdpr_14851" name="gdpr[14851]" value="Y" class="av-checkbox ">
+                            <span>Job Listings</span>
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <div class="row mb-4">
+                  <div class="col-12 offset-md-2 col-md-8">
+                    <div class="mc-field-group">
+                      <input type="email" class="form-control" placeholder="Enter your Email"value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                    </div>
+                  </div>
+                </div>
+
+                <p>You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.</p>
+              </div>
+              <div class="content__gdprLegal">
+                <p>We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/" target="_blank">Learn more about Mailchimp's privacy practices here.</a></p>
+              </div>
+            </div>
+            <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e219b167e772f2dfcb412f704_228c94ca55" tabindex="-1" value=""></div>
+            <button type="submit" id="mc-embedded-subscribe">Subscribe</button>
+          </div>
+        </form>
+
+
+      </div>
+    </section> -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-with-bg wow fadeIn">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="contact-info">
+
+          <i class="fa fa-envelope"></i>
+          <a href="mailto:hello@clojurenorth.com">hello@clojurenorth.com</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <i class="fa fa-twitter"></i>
+          <a href="https://twitter.com/clojurenorth">@clojurenorth</a>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+
+    <section id="conduct" class="wow fadeIn">
+      <div class="container">
+        <div class="section-header">
+          <h2>Code of Conduct</h2>
+        </div>
+
+        <p>All attendees, speakers, sponsors, and volunteers for Clojure/north are required to agree to the event code of conduct. Organizers will enforce this code throughout the event. We are expecting cooperation from all participants to establish a safe environment for all.</p>
+        <h4>Need Help?</h4>
+        <p>You can contact us at <a href="mailto:hello@clojurenorth.com">hello@clojurenorth.com</a> or call the number in your event package during days of the event.</p>
+        <h4>The Quick version</h4>
+        <p>We are dedicated to provide a harassment-free conference experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organizers.</p>
+        <h4>The Less Quick Version</h4>
+        <p>Harassment includes offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.</p>
+        <p>Participants asked to stop any harassing behaviour are expected to comply immediately.</p>
+        <p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment.</p>
+        <p>If a participant engages in harassing behaviour, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.</p>
+        <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they'll be wearing branded volunteer buttons.</p>
+        <p>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</p>
+        <p>We expect participants to follow these rules at conference and workshop venues and conference-related social events.</p>
+
+        <p><em>Original source and credit: <a href="http://2012.jsconf.us/#/about">http://2012.jsconf.us/#/about</a> & <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">The Ada Initiative</a></em></p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+
+    <div class="container">
+      <div class="copyright">
+        <strong>Clojure/north</strong> is organized with the lovely help of 
+        <a href="https://www.linkedin.com/in/nikolaperic">Nikola Peric</a>, 
+        <a href="https://yogthos.net">Dmitri Sotnikov</a>, 
+        <a href="https:/carmen.la">Carmen La</a>, 
+        <a href="https://www.lubovsoltan.com/">Lubov Soltan</a>, 
+        <a href="https://twitter.com/johnnytong">Johnny Tong</a>,
+        <a href="https://www.thatfighterjet.com/">Raey Ang</a>, 
+        and others from the <a href="https://www.meetup.com/Clojure-Toronto/">Clojure TO community</a>.
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

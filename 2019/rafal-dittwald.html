@@ -13,7 +13,7 @@
   </script>
 
   <meta charset="utf-8">
-  <title>Clojure/north 2020 | {{ pageTitle }}</title>
+  <title>Clojure/north 2019 | Solving Problems the Clojure Way by Rafal Dittwald</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Clojure conference in Toronto, Canada" name="description">
 
@@ -37,7 +37,7 @@
 
   <!-- Meta Tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Clojure/north 2020 {{ ogTitle }}" />
+  <meta property="og:title" content="Clojure/north 2019 | Rafal Dittwald" />
   <meta property="og:description" content="Clojure conference in Toronto, Canada" />
   <meta property="og:image" content="https://clojurenorth.com/img/logo-2x.png" />
   <meta property="og:url" content="http://clojurenorth.com/" />
@@ -64,36 +64,76 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="{% if isIndex %}{% else %}index.html{% endif %}#intro" class="scrollto"><img src="img/logo-icon.png" alt="" title="Clojure/north"><h1>Clojure/north 2020</h1></a>
+        <a href="index.html#intro" class="scrollto"><img src="img/logo-icon.png" alt="" title="Clojure/north"><h1>Clojure/north 2019</h1></a>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#about">About</a></li>
-          <!--
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#schedule">Schedule</a></li>
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#speakers">Speakers</a></li>
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#sponsors">Sponsors</a></li>
-          -->
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#faq">FAQ</a></li>
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#contact">Contact</a></li>
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#conduct">Code of Conduct</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Past Events
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="2019">Clojure/north 2019</a>
-            </div>
-          </li>
-          <!-- <li class="buy-tickets"><a href="https://ti.to/clojure-north/clojure-north-2020" target="_blank">Registration</a></li> -->
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="index.html#speakers">Speakers</a></li>
+          <li><a href="index.html#sponsors">Sponsors</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#conduct">Code of Conduct</a></li>
+          <li class="buy-tickets"><a href="https://ti.to/clojure-north/clojure-north-2019" target="_blank">Registration</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
 
-  {% block content %}{% endblock %}
+  
+<main id="main" class="main-page">
+
+  <!--==========================
+    Speaker Details Section
+  ============================-->
+  <section id="speakers-details" class="wow fadeIn">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-6">
+          
+          <img src="img/speakers/rafal-dittwald.jpg" alt="Rafal Dittwald" class="img-fluid">
+          
+        </div>
+
+        <div class="col-md-6">
+          <div class="details">
+            <h2>Rafal Dittwald</h2>
+            
+            <div class="social">
+              
+              <a href="https://github.com/rafd" target="_blank"><i class="fa fa-github"></i></a>
+              
+              <a href="https://github.com/cognitory" target="_blank"><i class="fa fa-github"></i></a>
+              
+              <a href="https://github.com/braidchat" target="_blank"><i class="fa fa-github"></i></a>
+              
+            </div>
+            
+            
+            <h3><a href="https://www.youtube.com/watch?v=vK1DazRK_a0" target="_blank">Solving Problems the Clojure Way <i class="fa fa-play-circle"></i></a></h3>
+            
+            <p>After overcoming a fear of brackets, the next challenge for would-be Clojurians is less superficial: to stop writing Java (or Javascript, or Haskell...) with Clojure&#39;s syntax, and actually start &quot;thinking&quot; in Clojure. It is said that Clojure is a &quot;functional&quot; programming language; there&#39;s also talk of &quot;data-driven&quot; programming. What are these things? Are they any good? Why are they good? In this talk, Rafal attempts to distill the particular blend of functional and data-driven programming that makes up &quot;idiomatic Clojure&quot;, clarify what it looks like in practise (with real-world examples), and reflect on how Clojure&#39;s conventions came to be and how they continue to evolve.</p>
+<hr>
+<h3><a href="https://www.youtube.com/watch?v=7HpI7d3-hpo">Rafal&#39;s Lightning Talk: &quot;Composing Applications&quot;</a></h3>
+<p>In this lightning talk, Rafal will give an explanation of how they achieved something similar to &quot;Wordpress/Drupal plugins&quot; and inversion of control in Clojure for Braid, an open-source clojure chat app.</p>
+<hr>
+<h3>About Rafal</h3>
+<p>Rafal is a web developer, programming teacher and entrepreneur from Toronto. He used to work with PHP, Ruby and Javascript, but he&#39;s spent the last 7 (blissful) years working almost exclusively in Clojure and ClojureScript.
+He teaches web development at Lighthouse Labs, and as part of Cognitory, he works on various &quot;learn-to-program&quot; resources, including a book that teaches non-programmers functional and data-driven programming with Clojure. At Bloom, Rafal works on multiple ventures, including Braid, an open-source group chat application (written in Clojure).</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
 
   <!--==========================
     Footer
@@ -104,13 +144,11 @@
       <div class="copyright">
         <strong>Clojure/north</strong> is organized with the lovely help of 
         <a href="https://www.linkedin.com/in/nikolaperic">Nikola Peric</a>, 
-        <a href="https://github.com/yogthos">Dmitri Sotnikov</a>, 
-        <a href="https://github.com/lacarmen">Carmen La</a>, 
+        <a href="https://yogthos.net">Dmitri Sotnikov</a>, 
+        <a href="https:/carmen.la">Carmen La</a>, 
         <a href="https://www.lubovsoltan.com/">Lubov Soltan</a>, 
         <a href="https://twitter.com/johnnytong">Johnny Tong</a>,
         <a href="https://www.thatfighterjet.com/">Raey Ang</a>, 
-        <a href="https://www.linkedin.com/in/maximilian-gerlach-1556b622">Max Gerlach</a>, 
-        <a href="http://langnostic.inaimathi.ca/">Leo Zovic</a>
         and others from the <a href="https://www.meetup.com/Clojure-Toronto/">Clojure TO community</a>.
       </div>
       <div class="credits">
