@@ -30,17 +30,29 @@
 (defn md->html [s]
   (marked/parse s #js{:headerIds false}))
 
+(defn path [& args]
+  (clojure.string/join "/" (remove nil? args)))
+
 ;;================= MAIN ============================
 
-(let [speaker-order (string/split (slurp "speakers/order.txt") #"\n")
-      speaker-meta (reduce (fn [v speaker]
-                             (let [rdr (->> (str "speakers/" speaker ".md")
-                                            (slurp)
-                                            (string-push-back-reader))
-                                   meta (read rdr)
-                                   details (md->html (read-to-eof rdr))]
-                               (spit (str speaker ".html") (nj/render "speaker-details.html" (clj->js (assoc meta :details details))))
-                               (conj v (assoc meta :details (str speaker ".html")))))
-                           []
-                           speaker-order)]
-  (spit "index.html" (nj/render "index.html" (clj->js {:speakers speaker-meta}))))
+
+(defn gen-site [year]
+  (let [speaker-order 
+        (remove clojure.string/blank? (string/split (slurp (path "speakers" year "order.txt")) #"\n"))
+        
+        speaker-meta  
+        (reduce (fn [v speaker]
+                  (let [rdr     (->> (path "speakers" year (str speaker ".md"))
+                                     (slurp)
+                                     (string-push-back-reader))
+                        meta    (read rdr)
+                        details (md->html (read-to-eof rdr))]
+                    (spit (path year (str speaker ".html"))
+                          (nj/render (path year "speaker-details.html") (clj->js (assoc meta :details details))))
+                    (conj v (assoc meta :details (str speaker ".html")))))
+                []
+                speaker-order)]
+    (spit (path year "index.html") (nj/render (path year "index.html") (clj->js {:speakers speaker-meta})))))
+
+(gen-site "2019")
+(gen-site nil)

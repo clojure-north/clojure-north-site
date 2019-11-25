@@ -13,7 +13,7 @@
   </script>
 
   <meta charset="utf-8">
-  <title>Clojure/north 2020 | {{ pageTitle }}</title>
+  <title>Clojure/north 2019 | Residential Programming without Mutable State by Thomas Getgood</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Clojure conference in Toronto, Canada" name="description">
 
@@ -37,7 +37,7 @@
 
   <!-- Meta Tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Clojure/north 2020 {{ ogTitle }}" />
+  <meta property="og:title" content="Clojure/north 2019 | Thomas Getgood" />
   <meta property="og:description" content="Clojure conference in Toronto, Canada" />
   <meta property="og:image" content="https://clojurenorth.com/img/logo-2x.png" />
   <meta property="og:url" content="http://clojurenorth.com/" />
@@ -64,36 +64,64 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="{% if isIndex %}{% else %}index.html{% endif %}#intro" class="scrollto"><img src="img/logo-icon.png" alt="" title="Clojure/north"><h1>Clojure/north 2020</h1></a>
+        <a href="index.html#intro" class="scrollto"><img src="img/logo-icon.png" alt="" title="Clojure/north"><h1>Clojure/north 2019</h1></a>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#about">About</a></li>
-          <!--
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#schedule">Schedule</a></li>
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#speakers">Speakers</a></li>
-          -->
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#sponsors">Sponsors</a></li>
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#faq">FAQ</a></li>
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#contact">Contact</a></li>
-          <li><a href="{% if isIndex %}{% else %}index.html{% endif %}#conduct">Code of Conduct</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Past Events
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="2019">Clojure/north 2019</a>
-            </div>
-          </li>
-          <!-- <li class="buy-tickets"><a href="https://ti.to/clojure-north/clojure-north-2020" target="_blank">Registration</a></li> -->
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="index.html#speakers">Speakers</a></li>
+          <li><a href="index.html#sponsors">Sponsors</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#conduct">Code of Conduct</a></li>
+          <li class="buy-tickets"><a href="https://ti.to/clojure-north/clojure-north-2019" target="_blank">Registration</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
 
-  {% block content %}{% endblock %}
+  
+<main id="main" class="main-page">
+
+  <!--==========================
+    Speaker Details Section
+  ============================-->
+  <section id="speakers-details" class="wow fadeIn">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-6">
+          
+          <img src="img/speakers/thomas-getgood.jpg" alt="Thomas Getgood" class="img-fluid">
+          
+        </div>
+
+        <div class="col-md-6">
+          <div class="details">
+            <h2>Thomas Getgood</h2>
+            
+            
+            <h3><a href="https://www.youtube.com/watch?v=Kgw9fblSOx4" target="_blank">Residential Programming without Mutable State <i class="fa fa-play-circle"></i></a></h3>
+            
+            <p>Residential programming isn&#39;t a popular idea nowadays, with systems like Smalltalk and InterLisp seen as fringe ideas, but tools like the REPL and Figwheel are great productivity boosters precisely because they give us back some of the power of residential programming. </p>
+<p>In this talk, Thomas will take a look at some of the reasons that residential programming isn&#39;t common, and demonstrate a toy environment that addresses many of the historical complaints by applying Clojure&#39;s data model to the program itself.</p>
+<hr>
+<h3>About Thomas</h3>
+<p>Thomas studied mathematics and has spent the majority of the past ten years working on small teams and in startups, and as a result has little concept of the term role. This might be why his hobby projects show no respect for interdisciplinary boundaries.</p>
+<p>Motivating questions: Why is computer literacy so abysmally low? Why do developers write qualitatively different software for themselves and their customers? Why do people laugh at me when I ask why you can&#39;t combine a desktop application with part of your favourite website to make something new?</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
 
   <!--==========================
     Footer
@@ -102,13 +130,13 @@
 
     <div class="container">
       <div class="copyright">
-        <strong>Clojure/north</strong> is organized with the lovely help of
-        <a href="http://nikperic.com/">Nikola Peric</a>,
-        <a href="https://yogthos.net">Dmitri Sotnikov</a>,
-        <a href="https://carmen.la">Carmen La</a>,
-        <a href="https://www.lubovsoltan.com/">Lubov Soltan</a>,
-        <a href="https://www.linkedin.com/in/maximilian-gerlach-1556b622">Max Gerlach</a>,
-        <a href="https://www.linkedin.com/in/sasha-lysenko-5a4165a4/">Sasha Lysenko</a>
+        <strong>Clojure/north</strong> is organized with the lovely help of 
+        <a href="https://www.linkedin.com/in/nikolaperic">Nikola Peric</a>, 
+        <a href="https://yogthos.net">Dmitri Sotnikov</a>, 
+        <a href="https:/carmen.la">Carmen La</a>, 
+        <a href="https://www.lubovsoltan.com/">Lubov Soltan</a>, 
+        <a href="https://twitter.com/johnnytong">Johnny Tong</a>,
+        <a href="https://www.thatfighterjet.com/">Raey Ang</a>, 
         and others from the <a href="https://www.meetup.com/Clojure-Toronto/">Clojure TO community</a>.
       </div>
       <div class="credits">
