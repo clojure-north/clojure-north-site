@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.njk" %}
 
 {% set pageTitle = "Clojure Conference - Toronto, Canada" %}
 {% set isIndex = true %}
@@ -50,7 +50,9 @@
       <div class="container">
         <div class="section-header">
           <p>Call for Proposals and ticket sales coming soon</p>
+          <p>In the meantime, check out some of last year's talks!</p>
         </div>
+        {% include "youtube-carousel.njk" %}
       </div>
     </section>
 
@@ -64,10 +66,10 @@
           <h2>Sponsors</h2>
           <p>Clojure/north is a non-profit conference so every dollar you put in goes directly towards making the
             event a better experience for everyone.</p>
-          <p class="mt-2"><a href="Clojure North Sponsorship Prospectus.pdf">Sponsor package</a></p>
+          <p class="mt-2"><a href="Clojure North 2020 Sponsorship Prospectus.pdf">Sponsor package</a></p>
         </div>
 
-        
+
         <div class="row no-gutters sponsors-wrap clearfix">
           <!-- <div class="col-sm-12">
             <h1>Platinum Sponsors</h1>
@@ -93,7 +95,7 @@
           </div> -->
         </div>
       </div>
-      
+
     </section>
 
     <!--==========================

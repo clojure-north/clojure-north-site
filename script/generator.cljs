@@ -48,11 +48,11 @@
                         meta    (read rdr)
                         details (md->html (read-to-eof rdr))]
                     (spit (path year (str speaker ".html"))
-                          (nj/render (path year "speaker-details.html") (clj->js (assoc meta :details details))))
+                          (nj/render (path year "speaker-details.njk") (clj->js (assoc meta :details details))))
                     (conj v (assoc meta :details (str speaker ".html")))))
                 []
                 speaker-order)]
-    (spit (path year "index.html") (nj/render (path year "index.html") (clj->js {:speakers speaker-meta})))))
+    (spit (path year "index.html") (nj/render (path year "index.njk") (clj->js {:speakers speaker-meta})))))
 
 (gen-site "2019")
 (gen-site nil)
