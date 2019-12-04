@@ -87,6 +87,7 @@ jQuery(document).ready(function( $ ) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
+        window.history.replaceState({}, "", this.hash);
         var top_space = 0;
 
         if ($('#header').length) {
