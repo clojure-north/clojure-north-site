@@ -47,6 +47,9 @@
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:site" content="@clojurenorth" />
 
+  <!-- Tickets -->
+  <script src='https://js.tito.io/v1' async></script>
+
   <!-- =======================================================
     Theme Name: TheEvent
     Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
@@ -71,7 +74,7 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="#about">About</a></li>
+          
           <!--
           <li><a href="#schedule">Schedule</a></li>
           -->
@@ -90,7 +93,7 @@
               <a class="dropdown-item" href="2019">Clojure/north 2019</a>
             </div>
           </li>
-          <!-- <li class="buy-tickets"><a href="https://ti.to/clojure-north/clojure-north-2020" target="_blank">Registration</a></li> -->
+          <li class="buy-tickets"><a href="https://ti.to/clojure-north/clojure-north-2020" target="_blank">Registration</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -106,7 +109,7 @@
       <p class="mb-4 pb-0">June 25th - 26th, 2020</p>
       <p class="mb-4 pb-0">Toronto, Canada</p>
 
-      <!-- <a href="https://ti.to/clojure-north/clojure-north-2019" target="_blank" class="about-btn scrollto">Register</a> -->
+      <a href="https://ti.to/clojure-north/clojure-north-2020" target="_blank" class="about-btn scrollto">Register</a>
     </div>
   </section>
 
@@ -134,6 +137,21 @@
         </div>
       </div>
     </section>
+
+
+<!--==========================
+      Tickets Section
+    ============================-->
+
+<section id="tickets" class="wow section-with-bg fadeIn">
+    <div class="container">
+        <div class="section-header">
+            <h2>Tickets</h2>
+        </div>
+        <tito-widget event="clojure-north/clojure-north-2020"></tito-widget>
+        <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
+    </div>
+</section>
 
 <!--==========================
       Speakers Section
@@ -498,7 +516,7 @@
     <!--==========================
       F.A.Q Section
     ============================-->
-    <section id="faq" class="wow fadeIn">
+    <section id="faq" class="wow section-with-bg fadeIn">
 
       <div class="container">
 

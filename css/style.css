@@ -686,7 +686,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #tickets .section-header {
   padding-top: 60px;
+  padding-bottom: 40px;
 }
+
+#tickets {
+  padding-bottom: 40px;
+}
+
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/
