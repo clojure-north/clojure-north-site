@@ -1,7 +1,8 @@
 {:name "Paul Lam"
  :title "Debugging Clojure Services Under Stress"
  :image "paul-lam.jpg"
- :social [{:link "" :icon ""}]}
+ :social [{:link "https://www.quantisan.com/" :icon "fa-link"}
+          {:link "https://twitter.com/quantisan" :icon "fa-twitter"}]}
 
 Debugging service defects is a stressful job. You wake up in the middle of the night from an ops alarm (because system fail always happen in the middle of the night). You look at the stack trace and jump into your Clojure code base. Oh, that's strange, this condition shouldn't happen. You look into the database. Sure enough, the state of the task is really in this unlikely state. How did that occur? You load up your server logs to the timestamp where this exception happened. Oh, what's that above? A network hiccup. But surely we architected for network outages. You dig deeper. You noticed a race condition happened. It seems that the network hiccup happened at exactly the small part of your system that you didn't handle this error properly. You identified the problems. This isn't over yet.
 
