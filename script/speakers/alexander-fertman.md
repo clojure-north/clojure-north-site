@@ -1,5 +1,5 @@
 {:name "Alexander Fertman"
- :title "Gluing Clojure Microservices"
+ :title "[Lightning] Gluing Clojure Microservices"
  :image "alexander-fertman.jpg"
  :social [{:link "https://linkedin.com/in/sfertman" :icon "fa-linkedin"}]}
 

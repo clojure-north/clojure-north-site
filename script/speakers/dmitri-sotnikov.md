@@ -1,5 +1,5 @@
 {:name  "Dmitri Sotnikov"
- :title "Hassle-free reporting with Lumo"
+ :title "[Lightning] Hassle-free reporting with Lumo"
  :image "dmitri-sotnikov.jpg"
  :social [{:link "https://github.com/yogthos" :icon "fa-github"}
  		  {:link "https://twitter.com/yogthos" :icon "fa-twitter"}

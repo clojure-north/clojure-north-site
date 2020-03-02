@@ -1,5 +1,5 @@
 {:name  "Carmen La"
- :title ""
+ :title "[Lightning] "
  :image "carmen-la.jpg"
  :social [{:link "https://github.com/lacarmen" :icon "fa-github"}
  		  {:link "http://carmen.la/" :icon "fa-link"}]}

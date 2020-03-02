@@ -93,29 +93,31 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <p>Clojure/north is having an open call for proposal for talks on June 25th or June 26th, 2020.</p>
-                <p>We’re looking for a wide variety of talks, with a focus on Clojure or general functional programming.
-                    You can submit a talk regardless of your experience level with Clojure; all perspectives matter.
-                    Ideally, talks will center around real-world use cases. Have you built something you’re proud of,
-                    overcome hurdles at work, or learned something new that you want to share? Submit a talk!</p>
+              <p><strong>Talk types:</strong></p>
+              <ul>
+                <li>Keynote: 60min</li>
+                <li>Regular: 30min</li>
+                <li>Lightning: 15min</li>
+              </ul>
 
-                <a href="https://www.papercall.io/clojure-north-2020" target="_blank" class="btn cfp-link">Submit CFP</a>
+              {% for speaker in speakers %}
+              <a class="row" href="{{ speaker.details }}" style="cursor: pointer;">
+                <div class="col-sm-3 col-md-2 col-lg-1">
+                  <div class="speaker speaker-image-container">
+                    <img src="img/speakers/{{ speaker.image }}" onerror="this.onerror=null;this.src='img/speakers/placeholder.jpg';">
+                  </div>
+                </div>
+                <div class="col-sm-9 col-md-10 col-lg-11">
+                  <div><strong>{{ speaker.title }}</strong></div>
+                  <div>{{ speaker.name }}</div>
+                </div>
+              </a>
+              {% endfor %}
 
-                <p>Regular talks will be roughly 30 minutes which includes Q&A at the speaker's discretion.</p>
+              <p><strong>Plus two more speakers still to be announced!</strong></p>
 
-                <p>We are also looking for a ~60 minute keynote and some 15 minute lightning talks.</p>
-
-                <p>If you have an alternative format in mind for your talk you can let us know within your submission.</p>
-
-                <h4>Timeline</h4>
-                <ul>
-                    <li>December 8, 2019: CFP Opens</li>
-                    <li>February 16, 2020: CFP Closes</li>
-                    <li>February 23, 2020: Speakers to be notified of our decision</li>
-                </ul>
-
-                <p>Need inspiration? Check out some of last year's talks!</p>
-                {% include "youtube-carousel.njk" %}
+              <p>Want to see more? Check out some of last year's talks!</p>
+              {% include "youtube-carousel.njk" %}
             </div>
         </div>
     </div>

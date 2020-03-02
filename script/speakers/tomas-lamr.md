@@ -1,5 +1,5 @@
 {:name "Tomáš Lamr"
- :title "How Clojure Saved Our Office"
+ :title "[Lightning] How Clojure Saved Our Office"
  :image "tomas-lamr.jpg"
  :social [{:link "https://github.com/holdybot/holdybot" :icon "fa-github"}
           {:link "https://twitter.com/tlamr" :icon "fa-twitter"}]}
