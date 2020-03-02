@@ -1232,3 +1232,22 @@ a.cfp-link:hover {
     padding: 8px 30px;
   }
 }
+
+
+.speaker img {
+  
+  width: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+.speaker-image-container {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 0 0;
+}

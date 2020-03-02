@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56703143-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-56703143-3');
+  </script>
+
+  <meta charset="utf-8">
+  <title>Clojure/north 2020 | Debugging Clojure Services Under Stress by Paul Lam</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Clojure conference in Toronto, Canada" name="description">
+
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Clojure/north 2020 | Paul Lam" />
+  <meta property="og:description" content="Clojure conference in Toronto, Canada" />
+  <meta property="og:image" content="https://clojurenorth.com/img/logo-2x.png" />
+  <meta property="og:url" content="http://clojurenorth.com/" />
+  <meta property="og:site_name" content="Clojure/north" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:site" content="@clojurenorth" />
+
+  <!-- Tickets -->
+  <script src='https://js.tito.io/v1' async></script>
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" class="header-fixed">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="index.html#intro" class="scrollto"><img src="img/logo-icon.png" alt="" title="Clojure/north"><h1>Clojure/north 2020</h1></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          
+          <!--
+          <li><a href="index.html#schedule">Schedule</a></li>
+          -->
+          <li><a href="index.html#speakers">Speakers</a></li>
+          <li><a href="index.html#sponsors">Sponsors</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#conduct">Code of Conduct</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Past Events
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="2019">Clojure/north 2019</a>
+            </div>
+          </li>
+          <li class="buy-tickets"><a href="https://ti.to/clojure-north/clojure-north-2020" target="_blank">Registration</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  
+<main id="main" class="main-page">
+
+  <!--==========================
+    Speaker Details Section
+  ============================-->
+  <section id="speakers-details" class="wow fadeIn">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-6">
+          
+          <img src="img/speakers/paul-lam.jpg" alt="Paul Lam" class="img-fluid" onerror="this.onerror=null;this.src='img/speakers/placeholder.jpg';">
+          
+        </div>
+
+        <div class="col-md-6">
+          <div class="details">
+            <h2>Paul Lam</h2>
+            
+            <div class="social">
+              
+              <a href="https://www.quantisan.com/" target="_blank"><i class="fa fa-link"></i></a>
+              
+              <a href="https://twitter.com/quantisan" target="_blank"><i class="fa fa-twitter"></i></a>
+              
+            </div>
+            
+            
+            <h3>Debugging Clojure Services Under Stress</h3>
+            
+            <p>Debugging service defects is a stressful job. You wake up in the middle of the night from an ops alarm (because system fail always happen in the middle of the night). You look at the stack trace and jump into your Clojure code base. Oh, that&#39;s strange, this condition shouldn&#39;t happen. You look into the database. Sure enough, the state of the task is really in this unlikely state. How did that occur? You load up your server logs to the timestamp where this exception happened. Oh, what&#39;s that above? A network hiccup. But surely we architected for network outages. You dig deeper. You noticed a race condition happened. It seems that the network hiccup happened at exactly the small part of your system that you didn&#39;t handle this error properly. You identified the problems. This isn&#39;t over yet.</p>
+<p>By now, it has been more than a few minutes. A customer on the other side of the globe is starting their work day and noticed an error. They message your support. You pause some of your workers so the transient bad data doesn&#39;t mess things up even more. You update your database records to their expected state. By the time you&#39;re done, job queue is backed up. You turn your workers back on. Oh no! That was too much load to the system...</p>
+<p>Debugging service defect is a stressful job. Your system is in an unexpected state. When one thing behaves unexpectedly, usually it affects other parts and you end up with multiple problems. You probably won&#39;t be in the best of mental state yourself when faced with this mess. And how much time do you have to figure all of this out? Well. Did I mention that debugging service defect is a stressful job?</p>
+<hr>
+<h3>About Paul</h3>
+<p>Paul is the engineering lead at Motiva. He&#39;s been lucky in his software engineering career being able to work mainly with Clojure at various companies across the US and Europe. Prior to serving as a tech lead, Paul worked on data processing pipelines and helped maintain open source Clojure projects such as docker-clojure, Cascalog, and Incanter.</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+
+    <div class="container">
+      <div class="copyright">
+        <strong>Clojure/north</strong> is organized with the lovely help of
+        <a href="http://nikperic.com/">Nikola Peric</a>,
+        <a href="https://yogthos.net">Dmitri Sotnikov</a>,
+        <a href="https://carmen.la">Carmen La</a>,
+        <a href="https://www.lubovsoltan.com/">Lubov Soltan</a>,
+        <a href="https://www.linkedin.com/in/maximilian-gerlach-1556b622">Max Gerlach</a>,
+        <a href="https://www.linkedin.com/in/sasha-lysenko-5a4165a4/">Sasha Lysenko</a>
+        and others from the <a href="https://www.meetup.com/Clojure-Toronto/">Clojure TO community</a>.
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
