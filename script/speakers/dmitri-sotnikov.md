@@ -5,7 +5,7 @@
  		  {:link "https://twitter.com/yogthos" :icon "fa-twitter"}
  		  {:link "http://yogthos.net/" :icon "fa-link"}]}
 
-This talk will illustrate how [doc-builder](https://github.com/yogthos/doc-builder/) leverages Pupetter via ClojureScript to generate HTML and PDF reports.
+This talk will illustrate how [doc-builder](https://github.com/yogthos/doc-builder/) leverages Puppeteer via ClojureScript to generate HTML and PDF reports.
 
 ---
 
