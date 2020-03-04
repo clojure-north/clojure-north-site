@@ -1251,3 +1251,11 @@ a.cfp-link:hover {
   float: left;
   margin: 0 10px 0 0;
 }
+
+.speaker-row {
+  padding-top: 24px;
+}
+
+.speaker-row:hover {
+  background-color: #d3dbf7;
+}

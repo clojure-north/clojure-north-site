@@ -1,7 +1,8 @@
 {:name "Dana Borinski"
  :title "Unleash the Power of the REPL"
  :image "dana-borinski.jpg"
- :social [{:link "" :icon ""}]}
+ :social [{:link "https://www.linkedin.com/in/dana-borinski-3617b3b9/" :icon "fa-linkedin"}
+          {:link "https://twitter.com/_danabor" :icon "fa-twitter"}]}
 
 Clojure provides some powerful tools out of the box for development and debugging. The best known that we all probably use is the REPL (Read Evaluate Print Loop) that enables developers a much easier way to interact with a running Clojure project and gives us more code clarity by making it possible to find the source of bugs much more quickly, and ultimately understand the code and flow better. 
 
