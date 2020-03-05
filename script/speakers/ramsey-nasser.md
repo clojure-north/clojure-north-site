@@ -5,9 +5,7 @@
           {:link "http://twitter.com/@ra" :icon "fa-twitter"}
           {:link "http://github.com/nasser" :icon "fa-github"}]}
 
-Game development is traditionally done in object oriented languages with pervasive mutation, so how does a functional lisp like Clojure work in the same setting? The Arcadia project integrates Clojure into Unity, the industry standard game engine, to do just that. This talk will dissect a few games made in Arcadia to explore how we use Clojure's strengths to make game development radically different.
-
-Through Ramsey's talk you'll see concrete examples of how to use Clojure's functional semantics and lisp idioms in a game development context.
+In 2015 I started the MAGIC project, an optimizing Clojure compiler written in Clojure targeting C#'s Common Language Runtime. In 2018 I started work on a Lisp of my own design named Jn that is broadly similar to Clojure but who's compiler is written in F#. These experiences have given me a vantage point to compare Clojure's dynamic REPL driven workflow to F#'s static ML-like type system. The talk will focus on my own experiences with the trade-offs presented by both approaches with respect to compiler design, but will attempt to draw more general conclusions as well.
 
 ---
 
