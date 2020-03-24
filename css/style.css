@@ -47,7 +47,7 @@ h6 {
 }
 
 .main-page {
-  margin-top: 70px;
+  margin-top: 150px;
 }
 
 .wow {
@@ -1235,7 +1235,7 @@ a.cfp-link:hover {
 
 
 .speaker img {
-  
+
   width: 100%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1258,4 +1258,16 @@ a.cfp-link:hover {
 
 .speaker-row:hover {
   background-color: #d3dbf7;
+}
+
+
+/*--------------------------------------------------------------
+# MISC
+--------------------------------------------------------------*/
+
+.alert-banner {
+  position: fixed;
+  top: 70px;
+  border-radius: 0;
+  z-index: 999;
 }
