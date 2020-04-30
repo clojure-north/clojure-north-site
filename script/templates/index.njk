@@ -19,29 +19,6 @@
 
   <main id="main">
 
-    <!--==========================
-      About Section
-    ============================-->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2>About The Event</h2>
-            <p>Clojure/north is a non-profit event from the Clojure community for the community. Our goal is to share knowledge and be an accessible, enjoyable event for newcomers and veterans to Clojure.</p>
-          </div>
-          <div class="col-lg-3">
-            <h3>Where</h3>
-            <p>Virtually! Through the magic of the internet</p>
-          </div>
-          <div class="col-lg-3">
-            <h3>When</h3>
-            <p>Thursday - Friday<br>June 25th - 26th, 2020</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
 <!--==========================
       Tickets Section
     ============================-->
@@ -68,8 +45,22 @@
       <h2>About the Remote Conference</h2>
     </div>
     <div class="row">
-      <div class="col-sm-12">
+      <div class=col-sm-12">
         <p>Due to the craziness of a global pandemic, the only responsible way to put on Clojure/north is virtually through a remote conference. We've worked hard to put something together that you'll find meaningful and unique over just watching talks on Youtube. Come join us at Clojure/north 2020 in a socially distant fashion!</p>
+      </div>
+      <div class="col-lg-6">
+        <h3>What>/h3>
+        <p>Clojure/north is a non-profit event from the Clojure community for the community. Our goal is to share knowledge and be an accessible, enjoyable event for newcomers and veterans to Clojure.</p>
+      </div>
+      <div class="col-lg-3">
+        <h3>Where</h3>
+        <p>Virtually! Through the magic of the internet</p>
+      </div>
+      <div class="col-lg-3">
+        <h3>When</h3>
+        <p>Thursday - Friday<br>June 25th - 26th, 2020</p>
+      </div>
+      <div class="col-sm-12">
         <ul>
           <li>Live Workshops on a variety of topics for beginners to experts! Experience multiple workshops in one event</li>
           <li>Exclusive Q&As with speakers. Get a chance to ask that burning question you've had</li>
@@ -86,7 +77,7 @@
 <!--==========================
       Speakers Section
     ============================-->
-<section id="speakers" class="wow fadeIn">
+<section id="workshops" class="wow fadeIn">
     <div class="container">
         <div class="section-header">
           <h2>Workshops</h2>
@@ -100,53 +91,71 @@
             <p>In the meantime, please have your say by filling out <b><a href="https://forms.gle/pdzr1EDUgdVE7tC27" target="_blank">this survey</a></b> on possible workshops.</p>
           </div>
         </div>
-
-        <div class="section-header">
-          <h2>Q&As</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12">
-            <p>Q&As are your opportunity to ask questions to some of our speakers. Each Q&A session is up to 30 minutes in length. Ask that question that's been burning in your head since you watched their talk!</p>
-            <hr/>
-            <p>To be announced!</p>
-          </div>
-        </div>
-
-        <div class="section-header">
-            <h2>Event Talks</h2>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-              <p><strong>Talk types:</strong></p>
-              <ul style="list-style: none;padding-bottom: 24px;">
-                <li>Keynote: 60min</li>
-                <li>Regular: 30min</li>
-                <li>Lightning: 15min</li>
-              </ul>
-
-              {% for speaker in speakers %}
-              <a class="row speaker-row" href="{{ speaker.details }}" style="cursor: pointer;">
-                <div class="col-sm-3 col-md-2 col-lg-1">
-                  <div class="speaker speaker-image-container">
-                    <img src="img/speakers/{{ speaker.image }}" onerror="this.onerror=null;this.src='img/speakers/placeholder.jpg';">
-                  </div>
-                </div>
-                <div class="col-sm-9 col-md-10 col-lg-11">
-                  <div><strong>{{ speaker.title }}</strong></div>
-                  <div>{{ speaker.name }}</div>
-                </div>
-              </a>
-              {% endfor %}
-
-              <p><strong>Plus two more speakers still to be announced!</strong></p>
-
-              <p>Want to see more? Check out some of last year's talks!</p>
-              {% include "youtube-carousel.njk" %}
-            </div>
-        </div>
     </div>
+
+</section>
+
+<!--==========================
+      Q&As Section
+    ============================-->
+    <section id="qas" class="section-with-bg wow fadeIn">
+      <div class="container">
+  
+          <div class="section-header">
+            <h2>Questions & Answers</h2>
+          </div>
+  
+          <div class="row">
+            <div class="col-sm-12">
+              <p>Q&As are your opportunity to ask questions to some of our speakers. Each Q&A session is up to 30 minutes in length. Ask that question that's been burning in your head since you watched their talk!</p>
+              <hr/>
+              <p>To be announced!</p>
+            </div>
+          </div>
+  
+      </div>
+  
+  </section>
+
+  <!--==========================
+      Speakers Section
+    ============================-->
+<section id="speakers" class="wow fadeIn">
+  <div class="container">
+      <div class="section-header">
+          <h2>Event Talks</h2>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-12">
+            <p><strong>Talk types:</strong></p>
+            <ul style="list-style: none;padding-bottom: 24px;">
+              <li>Keynote: 60min</li>
+              <li>Regular: 30min</li>
+              <li>Lightning: 15min</li>
+            </ul>
+
+            {% for speaker in speakers %}
+            <a class="row speaker-row" href="{{ speaker.details }}" style="cursor: pointer;">
+              <div class="col-sm-3 col-md-2 col-lg-1">
+                <div class="speaker speaker-image-container">
+                  <img src="img/speakers/{{ speaker.image }}" onerror="this.onerror=null;this.src='img/speakers/placeholder.jpg';">
+                </div>
+              </div>
+              <div class="col-sm-9 col-md-10 col-lg-11">
+                <div><strong>{{ speaker.title }}</strong></div>
+                <div>{{ speaker.name }}</div>
+              </div>
+            </a>
+            {% endfor %}
+
+            <p><strong>Plus two more speakers still to be announced!</strong></p>
+
+            <p>Want to see more? Check out some of last year's talks!</p>
+            {% include "youtube-carousel.njk" %}
+          </div>
+      </div>
+  </div>
 
 </section>
 
