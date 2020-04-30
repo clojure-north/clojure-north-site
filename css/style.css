@@ -433,6 +433,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+.content-section {
+  padding: 60px 0;
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
