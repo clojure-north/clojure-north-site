@@ -34,11 +34,15 @@
   (clojure.string/join "/" (remove nil? args)))
 
 ;;================= MAIN ============================
-
+(defn read-speakers-file [year fname]
+  (try
+    (remove clojure.string/blank? (string/split (slurp (path "speakers" year fname)) #"\n"))
+    (catch js/Error e
+      [])))
 
 (defn gen-site [year]
   (let [speaker-order 
-        (remove clojure.string/blank? (string/split (slurp (path "speakers" year "order.txt")) #"\n"))
+        (read-speakers-file year "order.txt")
         
         speaker-meta  
         (reduce (fn [v speaker]
@@ -51,8 +55,21 @@
                           (nj/render (path year "speaker-details.njk") (clj->js (assoc meta :details details))))
                     (conj v (assoc meta :details (str speaker ".html")))))
                 []
-                speaker-order)]
-    (spit (path year "index.html") (nj/render (path year "index.njk") (clj->js {:speakers speaker-meta})))))
+                speaker-order)
+        
+        qas-file
+        (read-speakers-file year "qas.txt")
+
+        qas
+        (reduce (fn [v speaker]
+                  (let [stub (-> speaker (string/lower-case) (string/replace #"[^a-z]" "-"))]
+                    (conj v {:name speaker
+                             :link (path year (str stub ".html"))})))
+                []
+                qas-file)
+        ]
+    (spit (path year "index.html") (nj/render (path year "index.njk") (clj->js {:speakers speaker-meta
+                                                                                :qas qas})))))
 
 (gen-site "2019")
 (gen-site nil)

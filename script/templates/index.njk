@@ -108,7 +108,11 @@
             <div class="col-sm-12">
               <p>Q&As are your opportunity to ask questions to some of our speakers. Each Q&A session is up to 30 minutes in length. Ask that question that's been burning in your head since you watched their talk!</p>
               <hr/>
-              <p>To be announced!</p>
+              <ul>
+                {% for qa in qas %}
+                <li><a href="{{ qa.link }}">{{ qa.name }}</a></li>
+                {% endfor %}
+              </ul>
             </div>
           </div>
   
