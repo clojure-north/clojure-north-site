@@ -11,4 +11,4 @@ In this talk, Carin will demonstrate some of the great Python libraries that are
 
 ### About Carin
 
-Carin Meier is a senior software developer at Cognitect. She has a passion for Clojure and AI and has spoken at many conferences, including keynoting at OSCON and Strange Loop.  She is the author of the O’Reilly book, “Living Clojure” and is both a committer and PPMC member of the Apache MXNet deep learning project.
+Carin Meier is a senior software developer at Reify Health. She has a passion for Clojure and AI and has spoken at many conferences, including keynoting at OSCON and Strange Loop. She is the author of the O’Reilly book, “Living Clojure” and is both a committer and PPMC member of the Apache MXNet deep learning project.

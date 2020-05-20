@@ -1,5 +1,5 @@
 {:name "Mike Fikes"
- :title "ClojureScript on Microprocessors"
+ :title "ClojureScript on Microcontrollers"
  :image "mike-fikes.jpg"}
 
 The ESP32 chip, positioned roughly between an Arduino and a Raspberry Pi, can be made to run ClojureScript. This opens up exciting new capabilities that previously weren't available.
