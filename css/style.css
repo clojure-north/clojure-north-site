@@ -789,6 +789,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
+# How it works Section
+--------------------------------------------------------------*/
+
+#how-it-works .how-it-works-text, #how-it-works .how-it-works-img {
+  width: 50%
+}
+
+/*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
 
@@ -1201,6 +1209,18 @@ a.cfp-link:hover {
 
   #schedule .nav-tabs a {
     padding: 8px 60px;
+  }
+
+  #how-it-works {
+    justify-content: center;
+  }
+
+  #how-it-works .how-it-works-text {
+    width: 100%
+  }
+
+  #how-it-works .how-it-works-img {
+    width: 70%
   }
 }
 
