@@ -175,7 +175,7 @@
           <li> Watch recorded talks anytime starting <b> June 22nd</b>.
             Our speakers are internationally renowned members of the Clojure and FP community (check out <a target="_blank" href="https://youtu.be/3Stja6YUB94?list=PL_arKaS8JOXHgSDJXtAVxhtDBJ6WL3uaS">last year's talks</a> for examples)
           </li>
-          <li> Attend ClojureNorth on <b> June 25th and 26th</b> from your home and take part in: </li>
+          <li> Attend Clojure/north on <b> June 25th and 26th</b> from your home and take part in: </li>
           <ul>
             <li> Live Workshops on a variety of topics. For programmers from beginners to experts!</li>
             <li> Exclusive Q&As with speakers. Get a chance to ask that burning question you've had.</li>
@@ -185,12 +185,12 @@
         </ol>
       </div>
       <div class="how-it-works-img">
-        <img src="img/conference_at_home.png" onerror="this.onerror=null;this.src='iimg/conference_at_home.png';" style="max-width:100%;max-height:100%;">
+        <img src="img/conference_at_home.png" onerror="this.onerror=null;this.src='img/conference_at_home.png';" style="max-width:100%;max-height:100%;">
         <span style="font-size:9px;color:grey;float:right;"><a href="https://www.humaaans.com/">By Pablo Stanley</a>. CC BY 4.0</span>
       </div>
     </div>
     <div>
-      <p>Pre-recored talks will be released publicly two weeks after the conference.</p>
+      <p>Pre-recorded talks will be released publicly two weeks after the conference.</p>
     </div>
   </div>
 </section>
@@ -204,12 +204,91 @@
           <h2>Workshops</h2>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-sm-12">
             <p>Workshops are interactive sessions that will range between one to five hours in length (with breaks as appropriate). The goal is to offer a guided experience for attendees on a new subject for them, be it entry level or advanced.</p>
-            <hr/>
-            <p>At least four separate workshops to be announced!</p>
-            <p>In the meantime, please have your say by filling out <b><a href="https://forms.gle/pdzr1EDUgdVE7tC27" target="_blank">this survey</a></b> on possible workshops.</p>
+          </div>
+          <div class="col-lg-9">
+              <ul class="accordion-list" id="workshop-list">
+                <li>
+                  <a data-toggle="collapse" class="collapsed toggle" href="#ws1">Functional Programming in Clojure - Rafal Dittwald & James Cash <i class="fa fa-minus-circle"></i></a>
+                  <div id="ws1" class="collapse" data-parent="#workshop-list">
+                    <p>Part one of two of "Intro to Solving Problems with Clojure". More details to come...</p>
+                    <p><strong>Format:</strong></p>
+                    <ul>
+                      <li>Introduce Assignment, core concepts (FP / DDP)</li>
+                      <li>Attendees work through it on their own for a while</li>
+                      <li>“code-review” / talk through different approaches different attendees took</li>
+                    </ul>
+                    <p><strong>Length: 2 hours</strong></p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" class="collapsed toggle" href="#ws5">Data Driven Programming in Clojure - Rafal Dittwald & James Cash <i class="fa fa-minus-circle"></i></a>
+                  <div id="ws5" class="collapse" data-parent="#workshop-list">
+                    <p>Part two of two of "Intro to Solving Problems with Clojure". More details to come...</p>
+                    <p><strong>Format:</strong></p>
+                    <ul>
+                      <li>Introduce Assignment, core concepts (FP / DDP)</li>
+                      <li>Attendees work through it on their own for a while</li>
+                      <li>“code-review” / talk through different approaches different attendees took</li>
+                    </ul>
+                    <p><strong>Length: 2 hours</strong></p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#ws2" class="collapsed toggle">Building Marvelous and Heroic Systems from the Ground Up - Mark Bastian <i class="fa fa-minus-circle"></i></a>
+                  <div id="ws2" class="collapse" data-parent="#workshop-list">
+                    <p>Clojure is a fantastically powerful, yet simple language. Despite this assertion, it is not uncommon for those new to the language to have a hard time grasping how to build complete applications from the basic building blocks of Clojure.</p>
+                    <p>This workshop will bridge the gap from the basics of data literals all the way to building a complete, stateful web backend application. Participants will learn the following key takeaways:</p>
+                    <ul>
+                      <li>Clojure is a data-centric language that frees developers to think about their problems simply and clearly.</li>
+                      <li>The core functions of Clojure can be thought of as a powerful data DSL that is appropriate for working and thinking in any domain.</li>
+                      <li>Clojure code is often developed in a bottom-up, functional style.</li>
+                      <li>Powerful libraries exist beyond Clojure core that are also built on data-driven and functional concepts.</li>
+                      <li>Stateful applications can be developed and organized in a functional manner by pushing state to the edges of their applications and isolating stateful components.</li>
+                    </ul>
+                    <p><strong>Length: TBD</strong></p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#ws3" class="collapsed toggle">The REPL as a General Purpose Tool - Wesley Matson <i class="fa fa-minus-circle"></i></a>
+                  <div id="ws3" class="collapse" data-parent="#workshop-list">
+                    <p>Some of us fight production fires using the REPL, even for non-Clojure projects. Each experience yields a useful script as an artifact. With a smidgen of forethought, these tools we build for ourselves can be shared and reused in creating investigative tooling for our teams.</p>
+                    <p><strong>Format:</strong></p>
+                    <ul>
+                      <li>Intro/Icebreaker Exercise</li>
+                      <li>Data Manipulation Exercise</li>
+                      <li>Data Joining Exercise</li>
+                      <li>"Next Steps"</li>
+                      <li>Q&A</li>
+                    </ul>
+                    <p><strong>Length: 1 hour</strong></p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#ws4" class="collapsed toggle">Concurrency with Clojure - Kapil Reddy & Rhishikesh Joshi <i class="fa fa-minus-circle"></i></a>
+                  <div id="ws4" class="collapse" data-parent="#workshop-list">
+                    <p><strong>Format:</strong></p>
+                    <ul>
+                      <li>Introduction</li>
+                      <li>Introduction to basics and discussion about concurrency</li>
+                      <li>Solving thundering herd</li>
+                      <li>A few anti patterns with concurrency constructs</li>
+                      <li>Introduction to CSP and how it differs from shared-memory concurrency</li>
+                      <li>Introduction to core.async library and its capabilities</li>
+                      <li>Build an in-memory data processing pipeline using channels</li>
+                      <li>Q&A</li>
+                    </ul>
+                    <p><strong>Length: 5 hours</strong></p>
+                  </div>
+                </li>
+
+              </ul>
           </div>
         </div>
     </div>

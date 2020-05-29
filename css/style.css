@@ -1049,6 +1049,49 @@ a.cfp-link:hover {
   content: "\f055" !important;
 }
 
+.accordion-list {
+  padding: 0;
+  list-style: none;
+}
+
+.accordion-list>li {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-list a.toggle  {
+  padding: 18px 0;
+  display: block;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+.accordion-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+.accordion-list p {
+  margin-bottom: 20px;
+}
+
+.accordion-list a.collapse {
+  color: #63b132;
+}
+
+.accordion-list a.collapsed {
+  color: #000;
+}
+
+.accordion-list a.collapsed i::before {
+  content: "\f055" !important;
+}
+
 /*--------------------------------------------------------------
 # Subscribe Section
 --------------------------------------------------------------*/
