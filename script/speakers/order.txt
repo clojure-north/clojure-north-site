@@ -13,6 +13,7 @@ luke-meyers
 mark-bastian
 mike-fikes
 paul-lam
+paulo-feodrippe
 ramsey-nasser
 rhishikesh-joshi
 tomas-lamr
