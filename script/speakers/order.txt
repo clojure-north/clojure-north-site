@@ -10,7 +10,6 @@ james-cash
 kapil-reddy
 lukasz-korecki
 luke-meyers
-mark-bastian
 mike-fikes
 paul-lam
 paulo-feodrippe
