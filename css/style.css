@@ -742,6 +742,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: background-color ease-in-out 0.3s;
 }
 
+#schedule .schedule-item h4 span {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+}
+
 #schedule .schedule-item:hover {
   background-color: #fff;
 }
@@ -758,14 +764,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50%;
   float: left;
   margin: 0 10px 0 0;
-}
-
-#schedule .schedule-item .speaker img {
-  width: 100%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  margin-left: 50%;
-  transition: all ease-in-out 0.3s;
 }
 
 #schedule .schedule-item .details {
@@ -1335,5 +1333,5 @@ a.cfp-link:hover {
   position: fixed;
   top: 70px;
   border-radius: 0;
-  z-index: 999;
+  z-index: 900;
 }

@@ -4,11 +4,12 @@
 {% set isIndex = true %}
 
 {% block content %}
+
   <!--==========================
     Intro Section
   ============================-->
   <section id="intro">
-    <div class="intro-container wow fadeIn">
+    <div class="intro-container">
       <img src="img/logo-2x.png" style="max-height:55%;" alt="Clojure/north" title="Clojure/north"/>
       <p class="mb-4 pb-0">June 25th - 26th, 2020</p>
       <p class="mb-4 pb-0">Worldwide</p>
@@ -20,26 +21,10 @@
   <main id="main">
 
 <!--==========================
-      Tickets Section
-    ============================-->
-
-<section id="tickets" class="wow section-with-bg fadeIn">
-    <div class="container">
-        <div class="section-header">
-            <h2>Tickets</h2>
-        </div>
-        <tito-widget event="clojure-north/clojure-north-2020"></tito-widget>
-        <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
-        <hr/>
-        <p>Note: attendees who have purchased the previous in-person tickets will be granted a partial refund and extended an opportunity to request a refund up until June 21st.</p>
-    </div>
-</section>
-
-<!--==========================
       About Clojure/north Section
     ============================-->
 
-<section id="about" class="wow section-with-bg fadeIn">
+<section id="about" class="section-with-bg fadeIn">
   <div class="container">
     <div class="section-header">
       <h2>About the Remote Conference</h2>
@@ -63,10 +48,26 @@
 </section>
 
 <!--==========================
+      Tickets Section
+    ============================-->
+
+<section id="tickets">
+    <div class="container">
+        <div class="section-header">
+            <h2>Tickets</h2>
+        </div>
+        <tito-widget event="clojure-north/clojure-north-2020"></tito-widget>
+        <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
+        <hr/>
+        <p>Note: attendees who have purchased the previous in-person tickets will be granted a partial refund and extended an opportunity to request a refund up until June 21st.</p>
+    </div>
+</section>
+
+<!--==========================
       How it works Section
     ============================-->
-    
-<section id="how-it-works" class="content-section section-with-bg wow fadeIn">
+
+<section id="how-it-works" class="content-section section-with-bg">
   <div class="container">
     <div class="section-header">
       <h2>How it works</h2>
@@ -98,10 +99,13 @@
   </div>
 </section>
 
+
+ {% include "schedule.njk" %}
+
 <!--==========================
       Speakers Section
     ============================-->
-<section id="workshops" class="content-section wow fadeIn">
+<section id="workshops" class="content-section">
     <div class="container">
         <div class="section-header">
           <h2>Workshops</h2>
@@ -201,17 +205,16 @@
 <!--==========================
       Q&As Section
     ============================-->
-    <section id="qas" class="content-section section-with-bg wow fadeIn">
+    <section id="qas" class="content-section section-with-bg">
       <div class="container">
-  
+
           <div class="section-header">
             <h2>Questions & Answers</h2>
           </div>
-  
+
           <div class="row">
             <div class="col-sm-12">
               <p>Q&As are your opportunity to ask questions to some of our speakers. Each Q&A session is up to 30 minutes in length. Ask that question that's been burning in your head since you watched their talk!</p>
-              <hr/>
               <ul>
                 {% for qa in qas %}
                 <li><a href="{{ qa.link }}">{{ qa.name }}</a></li>
@@ -219,56 +222,49 @@
               </ul>
             </div>
           </div>
-  
+
       </div>
-  
+
   </section>
 
-  <!--==========================
+    <!--==========================
       Speakers Section
     ============================-->
-<section id="speakers" class="wow fadeIn">
-  <div class="container">
-      <div class="section-header">
-          <h2>Event Talks</h2>
-      </div>
+    <section id="speakers">
+      <div class="container">
+        <div class="section-header">
+          <h2>Event Speakers</h2>
+        </div>
 
-      <div class="row">
-          <div class="col-sm-12">
-            <p><strong>Talk types:</strong></p>
-            <ul style="list-style: none;padding-bottom: 24px;">
-              <li>Keynote: 60min</li>
-              <li>Regular: 30min</li>
-              <li>Lightning: 15min</li>
-            </ul>
 
-            {% for speaker in speakers %}
-            <a class="row speaker-row" href="{{ speaker.details }}" style="cursor: pointer;">
-              <div class="col-sm-3 col-md-2 col-lg-1">
-                <div class="speaker speaker-image-container">
-                  <img src="img/speakers/{{ speaker.image }}" onerror="this.onerror=null;this.src='img/speakers/placeholder.jpg';">
+        <div class="row">
+          {% for speaker in speakers %}
+          <div class="col-lg-3 col-md-5">
+            <div class="speaker">
+              <a href="{{ speaker.details }}"><img src="img/speakers/{% if speaker.image %}{{ speaker.image }}{% else %}placeholder.jpg{% endif %}" alt="{% if speaker.image %}{{ speaker.name }}{% else %}Placeholder{% endif %}" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="{{ speaker.details }}">{{ speaker.name }}</a></h3>
+                <p>{{ speaker.title }}</p>
+                <div class="social">
+                  {% if speaker.talk %}<a href="{{ speaker.talk }}" target="_blank"><i class="fa fa-play-circle"></i></a>{% endif %}
+                  {% for item in speaker.social %}
+                  <a href="{{ item.link }}" target="_blank"><i class="fa {{ item.icon }}"></i></a>
+                  {% endfor %}
                 </div>
               </div>
-              <div class="col-sm-9 col-md-10 col-lg-11">
-                <div><strong>{{ speaker.title }}</strong></div>
-                <div>{{ speaker.name }}</div>
-              </div>
-            </a>
-            {% endfor %}
-
-            <p>Want to see more? Check out some of last year's talks!</p>
-            {% include "youtube-carousel.njk" %}
+            </div>
           </div>
+          {% endfor %}
+        </div>
       </div>
-  </div>
 
-</section>
+    </section>
 
 
     <!--==========================
           Sponsors Section
         ============================-->
-    <section id="sponsors" class="section-with-bg wow fadeIn">
+    <section id="sponsors" class="section-with-bg">
       <div class="container">
         <div class="section-header">
           <h2>Sponsors</h2>
@@ -332,7 +328,7 @@
     <!--==========================
       gallery Section
     ============================-->
-    <section id="gallery" class="wow fadeInUp">
+    <section id="gallery" class="">
 
       <div class="container">
         <div class="section-header">
@@ -365,7 +361,7 @@
     <!--==========================
       F.A.Q Section
     ============================-->
-    <section id="faq" class="wow section-with-bg fadeIn">
+    <section id="faq" class="section-with-bg fadeIn">
 
       <div class="container">
 
@@ -455,7 +451,7 @@
       Subscribe Section
     ============================-->
     <section id="subscribe">
-      <div class="container wow fadeInUp">
+      <div class="containerUp">
         <div class="section-header">
           <h2>Mailing List</h2>
         </div>
@@ -570,7 +566,7 @@
     <!--==========================
       Contact Section
     ============================-->
-    <section id="contact" class="section-with-bg wow fadeIn">
+    <section id="contact" class="section-with-bg">
 
       <div class="container">
 
@@ -592,10 +588,10 @@
     </section><!-- #contact -->
 
     <!--==========================
-      Contact Section
+      Conduct Section
     ============================-->
 
-    <section id="conduct" class="wow fadeIn">
+    <section id="conduct">
       <div class="container">
         <div class="section-header">
           <h2>Code of Conduct</h2>

@@ -31,9 +31,6 @@ jQuery(document).ready(function( $ ) {
     $('#intro').css({ height: $(window).height() });
   }
 
-  // Initiate the wowjs animation library
-  new WOW().init();
-
   // Initialize Venobox
   $('.venobox').venobox({
     bgcolor: '',
