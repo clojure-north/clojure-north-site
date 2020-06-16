@@ -1,5 +1,5 @@
 {:name  "Dann Toliver"
- :title ""
+ :title "Software, but not as we know it: Part Two"
  :image "dann-toliver.jpg"}
 
 
