@@ -239,7 +239,7 @@
 
         <div class="row">
           {% for speaker in speakers %}
-          <div class="col-lg-3 col-md-5">
+          <div class="col-lg-3 col-md-4">
             <div class="speaker">
               <a href="{{ speaker.details }}"><img src="img/speakers/{% if speaker.image %}{{ speaker.image }}{% else %}placeholder.jpg{% endif %}" alt="{% if speaker.image %}{{ speaker.name }}{% else %}Placeholder{% endif %}" class="img-fluid"></a>
               <div class="details">
