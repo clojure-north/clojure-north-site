@@ -1,6 +1,6 @@
 {:name "Alexander Fertman"
  :title "[Lightning] Gluing Clojure Microservices"
- :image "placeholder.jpg"
+ :image "alexander-fertman.jpg"
  :social [{:link "https://linkedin.com/in/sfertman" :icon "fa-linkedin"}]}
 
 In this talk Alexander will present two small utilities, which make it almost trivial to start breaking away libraries from your monolithic prototype into scalable micro-services.

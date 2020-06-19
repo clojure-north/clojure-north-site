@@ -1,6 +1,6 @@
 {:name "Francisco Viramontes"
  :title "Literate Stream Processing"
- :image "placeholder.jpg"
+ :image "francisco-viramontes.jpg"
  :social [{:link "" :icon ""}]}
 
 Stream Processing in Kafka is all the rage this days. At Funding Circle we have been on this bandwagon for a while now and have a lot to share. Jackdaw is our main public product and Francisco wishes to share it with the community in my own way. Literate programming great for understanding of how to get started with new paradigms since you have document and code as a narration of how to implement things. In this case a set of micro services using the latest and greatest Jackdaw features.
